@@ -54,7 +54,10 @@ function Button({
   return (
     <MotionButton
       data-slot="button"
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(
+        buttonVariants({ variant, size, className }),
+        "rounded-[10px] border border-[#4E4E4E] transition-colors duration-200 ease-in-out",
+      )}
       whileHover={{ scale: 1.03 }}
       whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", stiffness: 400, damping: 28 }}
