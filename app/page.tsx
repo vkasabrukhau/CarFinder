@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useAuth } from "@clerk/nextjs";
+import { GripVertical } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -295,13 +296,47 @@ function TablePagination({
 export default function RootPage() {
   const { isLoaded, isSignedIn } = useAuth();
 
-  const prospect = usePagination(prospectTableRows.length, PROSPECT_PAGE_SIZE);
+  const [prospectRows, setProspectRows] = useState(prospectTableRows);
+  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
+  const dragFromRef = useRef<number | null>(null);
+
+  const prospect = usePagination(prospectRows.length, PROSPECT_PAGE_SIZE);
   const savings = usePagination(savingsRows.length, SAVINGS_PAGE_SIZE);
+
+  function handleDragStart(pageIndex: number) {
+    dragFromRef.current = pageIndex;
+  }
+
+  function handleDragOver(e: React.DragEvent, pageIndex: number) {
+    e.preventDefault();
+    setDragOverIndex(pageIndex);
+  }
+
+  function handleDrop(pageIndex: number) {
+    const from = dragFromRef.current;
+    if (from === null || from === pageIndex) {
+      setDragOverIndex(null);
+      return;
+    }
+    const globalFrom = prospect.start + from;
+    const globalTo = prospect.start + pageIndex;
+    const next = [...prospectRows];
+    const [moved] = next.splice(globalFrom, 1);
+    next.splice(globalTo, 0, moved);
+    setProspectRows(next);
+    dragFromRef.current = null;
+    setDragOverIndex(null);
+  }
+
+  function handleDragEnd() {
+    dragFromRef.current = null;
+    setDragOverIndex(null);
+  }
 
   if (!isLoaded) return null;
 
   if (isSignedIn) {
-    const prospectPage = prospectTableRows.slice(prospect.start, prospect.end);
+    const prospectPage = prospectRows.slice(prospect.start, prospect.end);
     const savingsPage = savingsRows.slice(savings.start, savings.end);
 
     return (
@@ -340,6 +375,7 @@ export default function RootPage() {
                     <Table>
                       <TableHeader>
                         <TableRow>
+                          <TableHead className="w-8" />
                           <TableHead>Model</TableHead>
                           <TableHead>Low End</TableHead>
                           <TableHead>High End</TableHead>
@@ -352,8 +388,19 @@ export default function RootPage() {
                         </TableRow>
                       </TableHeader>
                       <TableBody>
-                        {prospectPage.map((row) => (
-                          <TableRow key={row.model}>
+                        {prospectPage.map((row, i) => (
+                          <TableRow
+                            key={row.model}
+                            draggable
+                            onDragStart={() => handleDragStart(i)}
+                            onDragOver={(e) => handleDragOver(e, i)}
+                            onDrop={() => handleDrop(i)}
+                            onDragEnd={handleDragEnd}
+                            className={dragOverIndex === i ? "bg-accent" : ""}
+                          >
+                            <TableCell className="w-8 px-2 cursor-grab active:cursor-grabbing">
+                              <GripVertical className="h-4 w-4 text-muted-foreground" />
+                            </TableCell>
                             <TableCell className="font-medium">
                               {row.model}
                             </TableCell>
@@ -376,6 +423,7 @@ export default function RootPage() {
                             className="invisible pointer-events-none"
                           >
                             <TableCell>&nbsp;</TableCell>
+                            <TableCell />
                             <TableCell />
                             <TableCell />
                             <TableCell />
