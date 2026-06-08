@@ -3,6 +3,44 @@
 import { useState, useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { AutocompleteField } from "@/components/ui/autocomplete-field";
+
+// ── Static autocomplete options ───────────────────────────────────────────────
+
+const ENGINES = [
+  "4-Cylinder", "6-Cylinder", "V6", "V8", "V10", "V12",
+  "Inline-4", "Inline-6", "Turbocharged 4-Cylinder", "Turbocharged V6",
+  "Electric Motor", "Hybrid",
+];
+const FUEL_TYPES = [
+  "Gasoline", "Diesel", "Electric", "Hybrid", "Plug-in Hybrid", "Flex Fuel", "Hydrogen",
+];
+const BODY_TYPES = [
+  "Sedan", "SUV", "Truck", "Coupe", "Hatchback", "Wagon",
+  "Convertible", "Van", "Minivan", "Crossover",
+];
+const TRANSMISSIONS = ["Automatic", "Manual", "CVT", "Dual-Clutch", "Semi-Automatic"];
+const DRIVE_TYPES = ["FWD", "RWD", "AWD", "4WD", "4x4"];
+
+// ── Vehicle data cache (module-level — fetched once per session) ──────────────
+
+let _makesCache: string[] | null = null;
+const _modelsCache = new Map<string, string[]>();
+
+async function fetchMakes(): Promise<string[]> {
+  if (_makesCache) return _makesCache;
+  const data: string[] = await fetch("/api/vehicles?type=makes").then((r) => r.json());
+  _makesCache = data;
+  return data;
+}
+
+async function fetchModels(make: string): Promise<string[]> {
+  if (_modelsCache.has(make)) return _modelsCache.get(make)!;
+  const data: unknown = await fetch(`/api/vehicles?make=${encodeURIComponent(make)}`).then((r) => r.json());
+  const models = Array.isArray(data) ? (data as string[]) : [];
+  _modelsCache.set(make, models);
+  return models;
+}
 
 // ── Bar data ──────────────────────────────────────────────────────────────────
 
@@ -192,6 +230,18 @@ export default function AddPage() {
   const [keywords, setKeywords] = useState("");
   const [driveType, setDriveType] = useState("");
 
+  const [makes, setMakes] = useState<string[]>([]);
+  const [models, setModels] = useState<string[]>([]);
+
+  useEffect(() => {
+    fetchMakes().then(setMakes).catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    if (!make) return;
+    fetchModels(make).then(setModels).catch(() => {});
+  }, [make]);
+
   const [yearRange, setYearRange] = useState<[number, number]>([
     0,
     yearBars.length - 1,
@@ -221,11 +271,12 @@ export default function AddPage() {
       <div className="grid flex-1 min-h-0 grid-cols-3 gap-6">
         {/* ── Column 1: Make · Year · Engines ── */}
         <div className="flex flex-col gap-20">
-          <input
-            className={field}
-            placeholder="Make"
+          <AutocompleteField
+            items={makes}
             value={make}
-            onChange={(e) => setMake(e.target.value)}
+            onValueChange={setMake}
+            placeholder="Make"
+            className={field}
           />
 
           <div className="flex gap-6">
@@ -259,28 +310,32 @@ export default function AddPage() {
             onRangeChange={setYearRange}
           />
 
-          <input
-            className={field}
-            placeholder="Engines"
+          <AutocompleteField
+            items={ENGINES}
             value={engines}
-            onChange={(e) => setEngines(e.target.value)}
+            onValueChange={setEngines}
+            placeholder="Engines"
+            className={field}
           />
 
-          <input
-            className={field}
-            placeholder="Fuel Type"
+          <AutocompleteField
+            items={FUEL_TYPES}
             value={fuelType}
-            onChange={(e) => setFuelType(e.target.value)}
+            onValueChange={setFuelType}
+            placeholder="Fuel Type"
+            className={field}
           />
         </div>
 
         {/* ── Column 2: Model · Miles · Body Type ── */}
         <div className="flex flex-col gap-20">
-          <input
-            className={field}
-            placeholder="Model"
+          <AutocompleteField
+            items={make ? models : []}
             value={model}
-            onChange={(e) => setModel(e.target.value)}
+            onValueChange={setModel}
+            placeholder="Model"
+            className={field}
+            disabled={!make}
           />
 
           <div className="flex gap-6">
@@ -320,18 +375,20 @@ export default function AddPage() {
             onRangeChange={setMilesRange}
           />
 
-          <input
-            className={field}
-            placeholder="Body Type"
+          <AutocompleteField
+            items={BODY_TYPES}
             value={bodyType}
-            onChange={(e) => setBodyType(e.target.value)}
+            onValueChange={setBodyType}
+            placeholder="Body Type"
+            className={field}
           />
 
-          <input
-            className={field}
-            placeholder="Transmission"
+          <AutocompleteField
+            items={TRANSMISSIONS}
             value={transmission}
-            onChange={(e) => setTransmission(e.target.value)}
+            onValueChange={setTransmission}
+            placeholder="Transmission"
+            className={field}
           />
         </div>
 
@@ -388,11 +445,12 @@ export default function AddPage() {
             onChange={(e) => setKeywords(e.target.value)}
           />
 
-          <input
-            className={field}
-            placeholder="Drive Type"
+          <AutocompleteField
+            items={DRIVE_TYPES}
             value={driveType}
-            onChange={(e) => setDriveType(e.target.value)}
+            onValueChange={setDriveType}
+            placeholder="Drive Type"
+            className={field}
           />
         </div>
       </div>

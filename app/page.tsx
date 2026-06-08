@@ -50,7 +50,7 @@ const prospectiveStats = [
   { label: "Cars", value: "148" },
   { label: "Added", value: "32" },
   { label: "Sold", value: "18" },
-  { label: '"Ideal" Matches', value: "41" },
+  { label: "Matches", value: "41" },
   { label: "Got Away", value: "9" },
   { label: "Models", value: "22" },
   { label: "Miles", value: "18,420" },
@@ -416,7 +416,9 @@ export default function RootPage() {
                             onDragOver={(e) => handleDragOver(e, i)}
                             onDrop={() => handleDrop(i)}
                             onDragEnd={handleDragEnd}
-                            onClick={() => router.push(`/${username}/${row.searchId}`)}
+                            onClick={() =>
+                              router.push(`/${username}/${row.searchId}`)
+                            }
                             className={`cursor-pointer ${dragOverIndex === i ? "bg-accent" : ""}`}
                           >
                             <TableCell
