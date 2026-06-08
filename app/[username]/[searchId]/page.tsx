@@ -298,18 +298,92 @@ const problems = [
 ];
 
 const repairCosts = [
-  { service: "Brake pad replacement", avgCost: "$220–$310", interval: "Every 30k mi" },
-  { service: "CVT fluid change", avgCost: "$150–$200", interval: "Every 60k mi" },
-  { service: "Spark plugs", avgCost: "$120–$180", interval: "Every 100k mi" },
-  { service: "Timing chain service", avgCost: "$600–$900", interval: "Every 120k mi" },
+  {
+    service: "Oil change",
+    tier: "Routine",
+    avgCost: "$45–$80",
+    interval: "Every 5k–7.5k mi",
+    description:
+      "Standard synthetic oil and filter swap. The 1.5T engine requires 0W-20 full synthetic; conventional oil accelerates sludge buildup and worsens the known oil consumption issue.",
+  },
+  {
+    service: "Brake pad & rotor replacement",
+    tier: "Routine",
+    avgCost: "$220–$380",
+    interval: "Every 30k–50k mi",
+    description:
+      "Front pads wear faster than rear due to brake bias. OEM rotors are prone to surface rust if the car sits for extended periods — aftermarket coated rotors hold up better in wet climates.",
+  },
+  {
+    service: "CVT fluid change",
+    tier: "Routine",
+    avgCost: "$150–$200",
+    interval: "Every 60k mi",
+    description:
+      "Honda specifies HCF-2 CVT fluid exclusively. Non-OEM fluids can cause shudder even in healthy transmissions. A $150 fluid service is far cheaper than ignoring it.",
+  },
+  {
+    service: "Spark plug replacement",
+    tier: "Routine",
+    avgCost: "$120–$180",
+    interval: "Every 100k mi",
+    description:
+      "Iridium plugs last the full interval. Worn plugs cause rough idle and reduced fuel economy. The turbocharged variant requires intake manifold removal — budget extra labor time.",
+  },
+  {
+    service: "Timing chain service",
+    tier: "Expensive Maintenance",
+    avgCost: "$600–$900",
+    interval: "Every 120k mi",
+    description:
+      "Chain, tensioner, and guides should be inspected around 120k miles. Early warning is a rattle on cold starts. Deferred service risks chain stretch and potential valve contact damage.",
+  },
+  {
+    service: "Water pump replacement",
+    tier: "Expensive Maintenance",
+    avgCost: "$400–$650",
+    interval: "As needed",
+    description:
+      "Often bundled with timing chain service due to shared access. Failure causes overheating within minutes. The 1.5T variant uses an electric water pump that can fail independently of the auxiliary pump.",
+  },
+  {
+    service: "Transmission replacement (CVT)",
+    tier: "Expensive Parts",
+    avgCost: "$3,500–$5,200",
+    interval: "As needed",
+    description:
+      "Full CVT replacement is required when internal clutch packs or the belt assembly fail beyond fluid service recovery. Remanufactured units are available at the lower end of the cost range.",
+  },
+  {
+    service: "Engine short block replacement",
+    tier: "Expensive Parts",
+    avgCost: "$4,800–$7,500",
+    interval: "As needed",
+    description:
+      "Required when the 1.5T suffers catastrophic oil starvation damage — symptoms include rod knock and total loss of oil pressure. Most at risk on 2016–2019 models that were not monitored closely.",
+  },
 ];
 
-const insuranceData = [
-  { provider: "State Farm", monthly: "$94", annual: "$1,128", deductible: "$500" },
-  { provider: "Geico", monthly: "$87", annual: "$1,044", deductible: "$500" },
-  { provider: "Progressive", monthly: "$101", annual: "$1,212", deductible: "$500" },
-  { provider: "Allstate", monthly: "$112", annual: "$1,344", deductible: "$500" },
-];
+const insuranceCard = {
+  coverage: ["Collision", "Comprehensive", "Liability", "Uninsured Motorist", "Medical Payments", "Roadside Assistance"],
+  annualEstimate: "$1,044–$1,344 / yr",
+  monthlyEstimate: "$87–$112 / mo",
+};
+
+const extendedWarranty = {
+  coverage: ["Powertrain", "Electrical Systems", "A/C & Heating", "Fuel System", "Seals & Gaskets"],
+  duration: "Up to 8 yrs / 120k mi",
+  estimatedCost: "$1,200–$2,800",
+  description:
+    "Extended coverage picks up where the factory warranty left off. Honda Care plans must be purchased before the factory warranty expires; third-party options remain available after that window.",
+};
+
+const oemWarranty = {
+  basic: "3 yrs / 36k mi — Bumper to Bumper",
+  powertrain: "5 yrs / 60k mi — Powertrain",
+  description:
+    "For 2018–2022 models with 20k–70k miles, the original bumper-to-bumper warranty has fully lapsed. Powertrain coverage may still apply to lower-mileage 2021–2022 examples.",
+};
 
 // ── Tabs ──────────────────────────────────────────────────────────────────────
 
@@ -480,47 +554,108 @@ export default function SearchPage({
           )}
 
           {activeTab === "Repair / Maintenance Costs" && (
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Service</TableHead>
-                  <TableHead>Avg Cost</TableHead>
-                  <TableHead>Interval</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {repairCosts.map((row) => (
-                  <TableRow key={row.service}>
-                    <TableCell className="font-medium">{row.service}</TableCell>
-                    <TableCell className="tabular-nums">{row.avgCost}</TableCell>
-                    <TableCell className="text-muted-foreground">{row.interval}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+              {repairCosts.map((row) => {
+                const isExpensive = row.tier === "Expensive Parts";
+                const isMid = row.tier === "Expensive Maintenance";
+                const bg = isExpensive ? "#C73838" : isMid ? "#DBB900" : "#383838";
+                const tagCls = isMid
+                  ? "bg-black/15 text-[#1a1a1a]"
+                  : "bg-white/20 text-white";
+                return (
+                  <div
+                    key={row.service}
+                    className="rounded-xl p-4 flex flex-col gap-2.5"
+                    style={{ backgroundColor: bg }}
+                  >
+                    <p
+                      className={cn(
+                        "text-lg font-semibold leading-snug",
+                        isMid ? "text-[#1a1a1a]" : "text-white",
+                      )}
+                    >
+                      {row.service}
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      <span className={cn("rounded-md px-3 py-1.5 text-sm font-medium", tagCls)}>
+                        {row.avgCost}
+                      </span>
+                      <span className={cn("rounded-md px-3 py-1.5 text-sm font-medium", tagCls)}>
+                        {row.interval}
+                      </span>
+                    </div>
+                    <p
+                      className={cn(
+                        "text-sm leading-relaxed",
+                        isMid ? "text-[#2a2a2a]" : "text-white/80",
+                      )}
+                    >
+                      {row.description}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
           )}
 
           {activeTab === "Insurance / Warranty Details" && (
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Provider</TableHead>
-                  <TableHead>Monthly Est.</TableHead>
-                  <TableHead>Annual Est.</TableHead>
-                  <TableHead>Deductible</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {insuranceData.map((row) => (
-                  <TableRow key={row.provider}>
-                    <TableCell className="font-medium">{row.provider}</TableCell>
-                    <TableCell className="tabular-nums">{row.monthly}</TableCell>
-                    <TableCell className="tabular-nums">{row.annual}</TableCell>
-                    <TableCell className="tabular-nums">{row.deductible}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+            <div className="flex flex-col gap-4">
+              {/* Insurance — dark green */}
+              <div className="rounded-xl p-5 flex flex-col gap-4" style={{ backgroundColor: "#1B4332" }}>
+                <div className="flex items-baseline justify-between gap-4">
+                  <p className="text-xl font-semibold text-white">Insurance</p>
+                  <div className="flex items-baseline gap-3">
+                    <span className="text-2xl font-bold text-white tabular-nums">{insuranceCard.annualEstimate}</span>
+                    <span className="text-sm text-white/60 tabular-nums">{insuranceCard.monthlyEstimate}</span>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {insuranceCard.coverage.map((item) => (
+                    <span key={item} className="rounded-md px-3 py-1.5 text-sm font-medium bg-white/15 text-white">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Extended Warranty — dark gray */}
+              <div className="rounded-xl p-5 flex flex-col gap-4" style={{ backgroundColor: "#2A2A2A" }}>
+                <div className="flex items-baseline justify-between gap-4">
+                  <p className="text-xl font-semibold text-white">Extended Warranty</p>
+                  <div className="flex items-baseline gap-3">
+                    <span className="text-2xl font-bold text-white tabular-nums">{extendedWarranty.estimatedCost}</span>
+                    <span className="text-sm text-white/50">{extendedWarranty.duration}</span>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {extendedWarranty.coverage.map((item) => (
+                    <span key={item} className="rounded-md px-3 py-1.5 text-sm font-medium bg-white/15 text-white">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-sm leading-relaxed text-white/70">{extendedWarranty.description}</p>
+              </div>
+
+              {/* OEM Warranty — expired, light gray dashed */}
+              <div className="rounded-xl p-5 flex flex-col gap-4 border-2 border-dashed border-[#c8c8c8] bg-[#f5f5f5]">
+                <div className="flex items-center justify-between gap-4">
+                  <p className="text-xl font-semibold text-[#555]">Original Manufacturer Warranty</p>
+                  <span className="rounded-md px-3 py-1.5 text-sm font-semibold bg-[#e0e0e0] text-[#888]">
+                    Expired
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="rounded-md px-3 py-1.5 text-sm font-medium bg-[#e5e5e5] text-[#777] line-through">
+                    {oemWarranty.basic}
+                  </span>
+                  <span className="rounded-md px-3 py-1.5 text-sm font-medium bg-[#e5e5e5] text-[#777] line-through">
+                    {oemWarranty.powertrain}
+                  </span>
+                </div>
+                <p className="text-sm leading-relaxed text-[#888]">{oemWarranty.description}</p>
+              </div>
+            </div>
           )}
         </div>
       </div>
