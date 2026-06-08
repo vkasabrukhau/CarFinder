@@ -29,9 +29,9 @@ import {
 } from "@/components/ui/pagination";
 
 const savingsRows = [
-  { atTime: "$7,600",  pay: "$850", result: "$8,450",  date: "Jan 8, 2026" },
-  { atTime: "$8,450",  pay: "$850", result: "$9,300",  date: "Feb 8, 2026" },
-  { atTime: "$9,300",  pay: "$850", result: "$10,150", date: "Mar 8, 2026" },
+  { atTime: "$7,600", pay: "$850", result: "$8,450", date: "Jan 8, 2026" },
+  { atTime: "$8,450", pay: "$850", result: "$9,300", date: "Feb 8, 2026" },
+  { atTime: "$9,300", pay: "$850", result: "$10,150", date: "Mar 8, 2026" },
   { atTime: "$10,150", pay: "$850", result: "$11,000", date: "Apr 8, 2026" },
   { atTime: "$11,000", pay: "$850", result: "$11,850", date: "May 8, 2026" },
   { atTime: "$11,850", pay: "$850", result: "$12,700", date: "Jun 8, 2026" },
@@ -55,25 +55,175 @@ const prospectiveStats = [
 ];
 
 const prospectTableRows = [
-  { model: "Honda Civic",       lowEnd: "$18,500", highEnd: "$23,900", avg: "$21,200", toReview: "12", tracking: "Active", available: "84", preference: "#1",  turnover: "4.2%" },
-  { model: "Toyota Camry",      lowEnd: "$21,000", highEnd: "$28,600", avg: "$24,750", toReview: "8",  tracking: "Active", available: "67", preference: "#2",  turnover: "3.8%" },
-  { model: "Mazda CX-5",        lowEnd: "$24,300", highEnd: "$32,100", avg: "$28,100", toReview: "5",  tracking: "Watch",  available: "41", preference: "#3",  turnover: "2.9%" },
-  { model: "Subaru Outback",    lowEnd: "$26,900", highEnd: "$35,750", avg: "$30,800", toReview: "11", tracking: "Active", available: "38", preference: "#4",  turnover: "3.1%" },
-  { model: "VW Jetta",          lowEnd: "$19,800", highEnd: "$26,400", avg: "$22,900", toReview: "6",  tracking: "Watch",  available: "29", preference: "#5",  turnover: "2.4%" },
-  { model: "Hyundai Elantra",   lowEnd: "$17,200", highEnd: "$22,500", avg: "$19,800", toReview: "9",  tracking: "Active", available: "53", preference: "#6",  turnover: "5.1%" },
-  { model: "Nissan Altima",     lowEnd: "$20,400", highEnd: "$27,100", avg: "$23,600", toReview: "4",  tracking: "Paused", available: "44", preference: "#7",  turnover: "3.3%" },
-  { model: "Kia Forte",         lowEnd: "$16,900", highEnd: "$21,300", avg: "$18,900", toReview: "7",  tracking: "Active", available: "31", preference: "#8",  turnover: "4.7%" },
-  { model: "Toyota Corolla",    lowEnd: "$19,200", highEnd: "$25,800", avg: "$22,400", toReview: "10", tracking: "Active", available: "72", preference: "#9",  turnover: "4.0%" },
-  { model: "Honda Accord",      lowEnd: "$23,100", highEnd: "$30,400", avg: "$26,700", toReview: "3",  tracking: "Watch",  available: "55", preference: "#10", turnover: "2.6%" },
-  { model: "Mazda 3",           lowEnd: "$20,500", highEnd: "$27,200", avg: "$23,800", toReview: "6",  tracking: "Active", available: "36", preference: "#11", turnover: "3.5%" },
-  { model: "Subaru Impreza",    lowEnd: "$21,700", highEnd: "$28,900", avg: "$25,100", toReview: "4",  tracking: "Watch",  available: "27", preference: "#12", turnover: "2.2%" },
-  { model: "Hyundai Sonata",    lowEnd: "$22,300", highEnd: "$29,700", avg: "$25,900", toReview: "5",  tracking: "Paused", available: "48", preference: "#13", turnover: "1.8%" },
-  { model: "Chevrolet Malibu",  lowEnd: "$18,800", highEnd: "$24,500", avg: "$21,500", toReview: "2",  tracking: "Paused", available: "22", preference: "#14", turnover: "1.5%" },
-  { model: "Ford Fusion",       lowEnd: "$17,400", highEnd: "$23,100", avg: "$20,100", toReview: "8",  tracking: "Active", available: "19", preference: "#15", turnover: "3.9%" },
+  {
+    model: "Honda Civic",
+    lowEnd: "$18,500",
+    highEnd: "$23,900",
+    avg: "$21,200",
+    toReview: "12",
+    tracking: "Active",
+    available: "84",
+    preference: "#1",
+    turnover: "4.2%",
+  },
+  {
+    model: "Toyota Camry",
+    lowEnd: "$21,000",
+    highEnd: "$28,600",
+    avg: "$24,750",
+    toReview: "8",
+    tracking: "Active",
+    available: "67",
+    preference: "#2",
+    turnover: "3.8%",
+  },
+  {
+    model: "Mazda CX-5",
+    lowEnd: "$24,300",
+    highEnd: "$32,100",
+    avg: "$28,100",
+    toReview: "5",
+    tracking: "Watch",
+    available: "41",
+    preference: "#3",
+    turnover: "2.9%",
+  },
+  {
+    model: "Subaru Outback",
+    lowEnd: "$26,900",
+    highEnd: "$35,750",
+    avg: "$30,800",
+    toReview: "11",
+    tracking: "Active",
+    available: "38",
+    preference: "#4",
+    turnover: "3.1%",
+  },
+  {
+    model: "VW Jetta",
+    lowEnd: "$19,800",
+    highEnd: "$26,400",
+    avg: "$22,900",
+    toReview: "6",
+    tracking: "Watch",
+    available: "29",
+    preference: "#5",
+    turnover: "2.4%",
+  },
+  {
+    model: "Hyundai Elantra",
+    lowEnd: "$17,200",
+    highEnd: "$22,500",
+    avg: "$19,800",
+    toReview: "9",
+    tracking: "Active",
+    available: "53",
+    preference: "#6",
+    turnover: "5.1%",
+  },
+  {
+    model: "Nissan Altima",
+    lowEnd: "$20,400",
+    highEnd: "$27,100",
+    avg: "$23,600",
+    toReview: "4",
+    tracking: "Paused",
+    available: "44",
+    preference: "#7",
+    turnover: "3.3%",
+  },
+  {
+    model: "Kia Forte",
+    lowEnd: "$16,900",
+    highEnd: "$21,300",
+    avg: "$18,900",
+    toReview: "7",
+    tracking: "Active",
+    available: "31",
+    preference: "#8",
+    turnover: "4.7%",
+  },
+  {
+    model: "Toyota Corolla",
+    lowEnd: "$19,200",
+    highEnd: "$25,800",
+    avg: "$22,400",
+    toReview: "10",
+    tracking: "Active",
+    available: "72",
+    preference: "#9",
+    turnover: "4.0%",
+  },
+  {
+    model: "Honda Accord",
+    lowEnd: "$23,100",
+    highEnd: "$30,400",
+    avg: "$26,700",
+    toReview: "3",
+    tracking: "Watch",
+    available: "55",
+    preference: "#10",
+    turnover: "2.6%",
+  },
+  {
+    model: "Mazda 3",
+    lowEnd: "$20,500",
+    highEnd: "$27,200",
+    avg: "$23,800",
+    toReview: "6",
+    tracking: "Active",
+    available: "36",
+    preference: "#11",
+    turnover: "3.5%",
+  },
+  {
+    model: "Subaru Impreza",
+    lowEnd: "$21,700",
+    highEnd: "$28,900",
+    avg: "$25,100",
+    toReview: "4",
+    tracking: "Watch",
+    available: "27",
+    preference: "#12",
+    turnover: "2.2%",
+  },
+  {
+    model: "Hyundai Sonata",
+    lowEnd: "$22,300",
+    highEnd: "$29,700",
+    avg: "$25,900",
+    toReview: "5",
+    tracking: "Paused",
+    available: "48",
+    preference: "#13",
+    turnover: "1.8%",
+  },
+  {
+    model: "Chevrolet Malibu",
+    lowEnd: "$18,800",
+    highEnd: "$24,500",
+    avg: "$21,500",
+    toReview: "2",
+    tracking: "Paused",
+    available: "22",
+    preference: "#14",
+    turnover: "1.5%",
+  },
+  {
+    model: "Ford Fusion",
+    lowEnd: "$17,400",
+    highEnd: "$23,100",
+    avg: "$20,100",
+    toReview: "8",
+    tracking: "Active",
+    available: "19",
+    preference: "#15",
+    turnover: "3.9%",
+  },
 ];
 
-const PROSPECT_PAGE_SIZE = 5;
-const SAVINGS_PAGE_SIZE = 5;
+const PROSPECT_PAGE_SIZE = 12;
+const SAVINGS_PAGE_SIZE = 6;
 
 function usePagination(totalItems: number, pageSize: number) {
   const [page, setPage] = useState(1);
@@ -204,7 +354,9 @@ export default function RootPage() {
                       <TableBody>
                         {prospectPage.map((row) => (
                           <TableRow key={row.model}>
-                            <TableCell className="font-medium">{row.model}</TableCell>
+                            <TableCell className="font-medium">
+                              {row.model}
+                            </TableCell>
                             <TableCell>{row.lowEnd}</TableCell>
                             <TableCell>{row.highEnd}</TableCell>
                             <TableCell>{row.avg}</TableCell>
@@ -213,6 +365,25 @@ export default function RootPage() {
                             <TableCell>{row.available}</TableCell>
                             <TableCell>{row.preference}</TableCell>
                             <TableCell>{row.turnover}</TableCell>
+                          </TableRow>
+                        ))}
+                        {Array.from({
+                          length: PROSPECT_PAGE_SIZE - prospectPage.length,
+                        }).map((_, i) => (
+                          <TableRow
+                            key={`filler-${i}`}
+                            aria-hidden
+                            className="invisible pointer-events-none"
+                          >
+                            <TableCell>&nbsp;</TableCell>
+                            <TableCell />
+                            <TableCell />
+                            <TableCell />
+                            <TableCell />
+                            <TableCell />
+                            <TableCell />
+                            <TableCell />
+                            <TableCell />
                           </TableRow>
                         ))}
                       </TableBody>
@@ -243,7 +414,9 @@ export default function RootPage() {
                   <span className="text-3xl font-semibold tabular-nums text-muted-foreground">
                     $12,250
                   </span>
-                  <span className="pb-0.5 text-xl text-muted-foreground">/</span>
+                  <span className="pb-0.5 text-xl text-muted-foreground">
+                    /
+                  </span>
                   <span className="text-3xl font-semibold tabular-nums">
                     $18,000
                   </span>
@@ -270,10 +443,32 @@ export default function RootPage() {
                     <TableBody>
                       {savingsPage.map((row) => (
                         <TableRow key={`${row.date}-${row.result}`}>
-                          <TableCell className="font-medium tabular-nums">{row.atTime}</TableCell>
-                          <TableCell className="font-medium tabular-nums text-emerald-600 dark:text-emerald-400">{row.pay}</TableCell>
-                          <TableCell className="font-medium tabular-nums">{row.result}</TableCell>
-                          <TableCell className="text-muted-foreground">{row.date}</TableCell>
+                          <TableCell className="font-medium tabular-nums">
+                            {row.atTime}
+                          </TableCell>
+                          <TableCell className="font-medium tabular-nums text-emerald-600 dark:text-emerald-400">
+                            {row.pay}
+                          </TableCell>
+                          <TableCell className="font-medium tabular-nums">
+                            {row.result}
+                          </TableCell>
+                          <TableCell className="text-muted-foreground">
+                            {row.date}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                      {Array.from({
+                        length: SAVINGS_PAGE_SIZE - savingsPage.length,
+                      }).map((_, i) => (
+                        <TableRow
+                          key={`filler-${i}`}
+                          aria-hidden
+                          className="invisible pointer-events-none"
+                        >
+                          <TableCell>&nbsp;</TableCell>
+                          <TableCell />
+                          <TableCell />
+                          <TableCell />
                         </TableRow>
                       ))}
                     </TableBody>
@@ -292,11 +487,54 @@ export default function RootPage() {
               <CardHeader>
                 <CardTitle>Current Financial Tools</CardTitle>
                 <CardDescription>
-                  Compact panel occupying one-third of the right column height.
+                  Active instruments contributing to your car fund.
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex-1">
-                <div className="h-full min-h-20 rounded-lg border border-dashed bg-muted/20" />
+                <div className="grid grid-cols-3 gap-3 h-full">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-sm">CDs</CardTitle>
+                      <CardDescription>Certificate of Deposit</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-2xl font-semibold tabular-nums">
+                        $4,200
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-1">
+                        4.85% APY · matures Aug 2026
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-sm">Bonds</CardTitle>
+                      <CardDescription>US Treasury / I-Bond</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-2xl font-semibold tabular-nums">
+                        $3,050
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-1">
+                        4.30% yield · 2-yr note
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-sm">Stocks</CardTitle>
+                      <CardDescription>Liquid equity holdings</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-2xl font-semibold tabular-nums">
+                        $5,000
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-1">
+                        +6.2% YTD · 3 positions
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
               </CardContent>
             </Card>
           </div>
