@@ -26,29 +26,29 @@ const yearBars = [
 ];
 
 const milesBars = [
-  { label: "0k",    value: 0,      count: 29 },
-  { label: "10k",   value: 10000,  count: 47 },
-  { label: "20k",   value: 20000,  count: 63 },
-  { label: "30k",   value: 30000,  count: 82 },
-  { label: "40k",   value: 40000,  count: 95 },
-  { label: "50k",   value: 50000,  count: 89 },
-  { label: "60k",   value: 60000,  count: 73 },
-  { label: "70k",   value: 70000,  count: 55 },
-  { label: "80k",   value: 80000,  count: 39 },
-  { label: "90k",   value: 90000,  count: 25 },
+  { label: "0k", value: 0, count: 29 },
+  { label: "10k", value: 10000, count: 47 },
+  { label: "20k", value: 20000, count: 63 },
+  { label: "30k", value: 30000, count: 82 },
+  { label: "40k", value: 40000, count: 95 },
+  { label: "50k", value: 50000, count: 89 },
+  { label: "60k", value: 60000, count: 73 },
+  { label: "70k", value: 70000, count: 55 },
+  { label: "80k", value: 80000, count: 39 },
+  { label: "90k", value: 90000, count: 25 },
   { label: "100k+", value: 100000, count: 19 },
 ];
 
 const priceBars = [
-  { label: "$5k",   value: 5000,  count: 11 },
-  { label: "$10k",  value: 10000, count: 33 },
-  { label: "$15k",  value: 15000, count: 67 },
-  { label: "$20k",  value: 20000, count: 92 },
-  { label: "$25k",  value: 25000, count: 86 },
-  { label: "$30k",  value: 30000, count: 64 },
-  { label: "$35k",  value: 35000, count: 43 },
-  { label: "$40k",  value: 40000, count: 29 },
-  { label: "$45k",  value: 45000, count: 18 },
+  { label: "$5k", value: 5000, count: 11 },
+  { label: "$10k", value: 10000, count: 33 },
+  { label: "$15k", value: 15000, count: 67 },
+  { label: "$20k", value: 20000, count: 92 },
+  { label: "$25k", value: 25000, count: 86 },
+  { label: "$30k", value: 30000, count: 64 },
+  { label: "$35k", value: 35000, count: 43 },
+  { label: "$40k", value: 40000, count: 29 },
+  { label: "$45k", value: 45000, count: 18 },
   { label: "$50k+", value: 50000, count: 14 },
 ];
 
@@ -59,7 +59,10 @@ function closestIndex(value: number, values: number[]): number {
   let bestDiff = Math.abs(values[0] - value);
   for (let i = 1; i < values.length; i++) {
     const diff = Math.abs(values[i] - value);
-    if (diff < bestDiff) { bestDiff = diff; best = i; }
+    if (diff < bestDiff) {
+      bestDiff = diff;
+      best = i;
+    }
   }
   return best;
 }
@@ -128,7 +131,10 @@ function BarRangeSelector({
       <div className="flex items-end gap-0.5" style={{ height: BAR_MAX_PX }}>
         {bars.map((bar, i) => {
           const selected = i >= minIdx && i <= maxIdx;
-          const h = Math.max(4, Math.round((bar.count / maxCount) * BAR_MAX_PX));
+          const h = Math.max(
+            4,
+            Math.round((bar.count / maxCount) * BAR_MAX_PX),
+          );
           return (
             <div
               key={bar.label}
@@ -176,23 +182,35 @@ const field =
 // ── Page ──────────────────────────────────────────────────────────────────────
 
 export default function AddPage() {
-  const [make, setMake]       = useState("");
-  const [model, setModel]     = useState("");
-  const [trims, setTrims]     = useState("");
+  const [make, setMake] = useState("");
+  const [model, setModel] = useState("");
+  const [trims, setTrims] = useState("");
   const [engines, setEngines] = useState("");
-  const [bodyType, setBodyType]   = useState("");
-  const [keywords, setKeywords]   = useState("");
+  const [fuelType, setFuelType] = useState("");
+  const [bodyType, setBodyType] = useState("");
+  const [transmission, setTransmission] = useState("");
+  const [keywords, setKeywords] = useState("");
+  const [driveType, setDriveType] = useState("");
 
-  const [yearRange, setYearRange]   = useState<[number, number]>([0, yearBars.length - 1]);
-  const [milesRange, setMilesRange] = useState<[number, number]>([0, milesBars.length - 1]);
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, priceBars.length - 1]);
+  const [yearRange, setYearRange] = useState<[number, number]>([
+    0,
+    yearBars.length - 1,
+  ]);
+  const [milesRange, setMilesRange] = useState<[number, number]>([
+    0,
+    milesBars.length - 1,
+  ]);
+  const [priceRange, setPriceRange] = useState<[number, number]>([
+    0,
+    priceBars.length - 1,
+  ]);
 
-  const yearValues  = yearBars.map((b) => b.value);
+  const yearValues = yearBars.map((b) => b.value);
   const milesValues = milesBars.map((b) => b.value);
   const priceValues = priceBars.map((b) => b.value);
 
-  const minYear  = yearBars[yearRange[0]].value;
-  const maxYear  = yearBars[yearRange[1]].value;
+  const minYear = yearBars[yearRange[0]].value;
+  const maxYear = yearBars[yearRange[1]].value;
   const minMiles = milesBars[milesRange[0]].value;
   const maxMiles = milesBars[milesRange[1]].value;
   const minPrice = priceBars[priceRange[0]].value;
@@ -201,9 +219,8 @@ export default function AddPage() {
   return (
     <main className="flex flex-col gap-6 p-6 h-[calc(100dvh-3.5rem)]">
       <div className="grid flex-1 min-h-0 grid-cols-3 gap-6">
-
         {/* ── Column 1: Make · Year · Engines ── */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-20">
           <input
             className={field}
             placeholder="Make"
@@ -211,7 +228,7 @@ export default function AddPage() {
             onChange={(e) => setMake(e.target.value)}
           />
 
-          <div className="flex gap-3">
+          <div className="flex gap-6">
             <input
               className={field}
               type="number"
@@ -248,10 +265,17 @@ export default function AddPage() {
             value={engines}
             onChange={(e) => setEngines(e.target.value)}
           />
+
+          <input
+            className={field}
+            placeholder="Fuel Type"
+            value={fuelType}
+            onChange={(e) => setFuelType(e.target.value)}
+          />
         </div>
 
         {/* ── Column 2: Model · Miles · Body Type ── */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-20">
           <input
             className={field}
             placeholder="Model"
@@ -259,7 +283,7 @@ export default function AddPage() {
             onChange={(e) => setModel(e.target.value)}
           />
 
-          <div className="flex gap-3">
+          <div className="flex gap-6">
             <input
               className={field}
               type="number"
@@ -267,7 +291,10 @@ export default function AddPage() {
               value={minMiles}
               onChange={(e) => {
                 const v = Number(e.target.value);
-                const idx = Math.min(closestIndex(v, milesValues), milesRange[1]);
+                const idx = Math.min(
+                  closestIndex(v, milesValues),
+                  milesRange[1],
+                );
                 setMilesRange([idx, milesRange[1]]);
               }}
             />
@@ -278,7 +305,10 @@ export default function AddPage() {
               value={maxMiles}
               onChange={(e) => {
                 const v = Number(e.target.value);
-                const idx = Math.max(closestIndex(v, milesValues), milesRange[0]);
+                const idx = Math.max(
+                  closestIndex(v, milesValues),
+                  milesRange[0],
+                );
                 setMilesRange([milesRange[0], idx]);
               }}
             />
@@ -296,10 +326,17 @@ export default function AddPage() {
             value={bodyType}
             onChange={(e) => setBodyType(e.target.value)}
           />
+
+          <input
+            className={field}
+            placeholder="Transmission"
+            value={transmission}
+            onChange={(e) => setTransmission(e.target.value)}
+          />
         </div>
 
         {/* ── Column 3: Trims · Price · Keywords ── */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-20">
           <input
             className={field}
             placeholder="Trims"
@@ -307,7 +344,7 @@ export default function AddPage() {
             onChange={(e) => setTrims(e.target.value)}
           />
 
-          <div className="flex gap-3">
+          <div className="flex gap-6">
             <input
               className={field}
               type="number"
@@ -315,7 +352,10 @@ export default function AddPage() {
               value={minPrice}
               onChange={(e) => {
                 const v = Number(e.target.value);
-                const idx = Math.min(closestIndex(v, priceValues), priceRange[1]);
+                const idx = Math.min(
+                  closestIndex(v, priceValues),
+                  priceRange[1],
+                );
                 setPriceRange([idx, priceRange[1]]);
               }}
             />
@@ -326,7 +366,10 @@ export default function AddPage() {
               value={maxPrice}
               onChange={(e) => {
                 const v = Number(e.target.value);
-                const idx = Math.max(closestIndex(v, priceValues), priceRange[0]);
+                const idx = Math.max(
+                  closestIndex(v, priceValues),
+                  priceRange[0],
+                );
                 setPriceRange([priceRange[0], idx]);
               }}
             />
@@ -343,6 +386,13 @@ export default function AddPage() {
             placeholder="Key Words"
             value={keywords}
             onChange={(e) => setKeywords(e.target.value)}
+          />
+
+          <input
+            className={field}
+            placeholder="Drive Type"
+            value={driveType}
+            onChange={(e) => setDriveType(e.target.value)}
           />
         </div>
       </div>

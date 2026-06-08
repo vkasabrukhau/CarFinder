@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { useAuth } from "@clerk/nextjs";
+import { useAuth, useUser } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
 import { GripVertical } from "lucide-react";
 import {
   Card,
@@ -57,6 +58,7 @@ const prospectiveStats = [
 
 const prospectTableRows = [
   {
+    searchId: "honda-civic",
     model: "Honda Civic",
     lowEnd: "$18,500",
     highEnd: "$23,900",
@@ -68,6 +70,7 @@ const prospectTableRows = [
     turnover: "4.2%",
   },
   {
+    searchId: "toyota-camry",
     model: "Toyota Camry",
     lowEnd: "$21,000",
     highEnd: "$28,600",
@@ -79,6 +82,7 @@ const prospectTableRows = [
     turnover: "3.8%",
   },
   {
+    searchId: "mazda-cx-5",
     model: "Mazda CX-5",
     lowEnd: "$24,300",
     highEnd: "$32,100",
@@ -90,6 +94,7 @@ const prospectTableRows = [
     turnover: "2.9%",
   },
   {
+    searchId: "subaru-outback",
     model: "Subaru Outback",
     lowEnd: "$26,900",
     highEnd: "$35,750",
@@ -101,6 +106,7 @@ const prospectTableRows = [
     turnover: "3.1%",
   },
   {
+    searchId: "vw-jetta",
     model: "VW Jetta",
     lowEnd: "$19,800",
     highEnd: "$26,400",
@@ -112,6 +118,7 @@ const prospectTableRows = [
     turnover: "2.4%",
   },
   {
+    searchId: "hyundai-elantra",
     model: "Hyundai Elantra",
     lowEnd: "$17,200",
     highEnd: "$22,500",
@@ -123,6 +130,7 @@ const prospectTableRows = [
     turnover: "5.1%",
   },
   {
+    searchId: "nissan-altima",
     model: "Nissan Altima",
     lowEnd: "$20,400",
     highEnd: "$27,100",
@@ -134,6 +142,7 @@ const prospectTableRows = [
     turnover: "3.3%",
   },
   {
+    searchId: "kia-forte",
     model: "Kia Forte",
     lowEnd: "$16,900",
     highEnd: "$21,300",
@@ -145,6 +154,7 @@ const prospectTableRows = [
     turnover: "4.7%",
   },
   {
+    searchId: "toyota-corolla",
     model: "Toyota Corolla",
     lowEnd: "$19,200",
     highEnd: "$25,800",
@@ -156,6 +166,7 @@ const prospectTableRows = [
     turnover: "4.0%",
   },
   {
+    searchId: "honda-accord",
     model: "Honda Accord",
     lowEnd: "$23,100",
     highEnd: "$30,400",
@@ -167,6 +178,7 @@ const prospectTableRows = [
     turnover: "2.6%",
   },
   {
+    searchId: "mazda-3",
     model: "Mazda 3",
     lowEnd: "$20,500",
     highEnd: "$27,200",
@@ -178,6 +190,7 @@ const prospectTableRows = [
     turnover: "3.5%",
   },
   {
+    searchId: "subaru-impreza",
     model: "Subaru Impreza",
     lowEnd: "$21,700",
     highEnd: "$28,900",
@@ -189,6 +202,7 @@ const prospectTableRows = [
     turnover: "2.2%",
   },
   {
+    searchId: "hyundai-sonata",
     model: "Hyundai Sonata",
     lowEnd: "$22,300",
     highEnd: "$29,700",
@@ -200,6 +214,7 @@ const prospectTableRows = [
     turnover: "1.8%",
   },
   {
+    searchId: "chevrolet-malibu",
     model: "Chevrolet Malibu",
     lowEnd: "$18,800",
     highEnd: "$24,500",
@@ -211,6 +226,7 @@ const prospectTableRows = [
     turnover: "1.5%",
   },
   {
+    searchId: "ford-fusion",
     model: "Ford Fusion",
     lowEnd: "$17,400",
     highEnd: "$23,100",
@@ -295,6 +311,10 @@ function TablePagination({
 
 export default function RootPage() {
   const { isLoaded, isSignedIn } = useAuth();
+  const { user } = useUser();
+  const router = useRouter();
+
+  const username = user?.username ?? user?.id ?? "me";
 
   const [prospectRows, setProspectRows] = useState(prospectTableRows);
   const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
@@ -396,9 +416,13 @@ export default function RootPage() {
                             onDragOver={(e) => handleDragOver(e, i)}
                             onDrop={() => handleDrop(i)}
                             onDragEnd={handleDragEnd}
-                            className={dragOverIndex === i ? "bg-accent" : ""}
+                            onClick={() => router.push(`/${username}/${row.searchId}`)}
+                            className={`cursor-pointer ${dragOverIndex === i ? "bg-accent" : ""}`}
                           >
-                            <TableCell className="w-8 px-2 cursor-grab active:cursor-grabbing">
+                            <TableCell
+                              className="w-8 px-2 cursor-grab active:cursor-grabbing"
+                              onClick={(e) => e.stopPropagation()}
+                            >
                               <GripVertical className="h-4 w-4 text-muted-foreground" />
                             </TableCell>
                             <TableCell className="font-medium">

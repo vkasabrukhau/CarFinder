@@ -26,9 +26,8 @@ export default function NavBar() {
 
   return (
     <nav className="w-full border-b bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex h-14 items-center gap-4">
-          <span className="font-semibold text-sm mr-2">Car Finder</span>
           <Menubar links={links} />
           <div className="sm:hidden">
             <DropdownMenu>
