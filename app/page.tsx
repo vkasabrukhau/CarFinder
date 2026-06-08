@@ -17,12 +17,7 @@ export default function RootPage() {
   if (isSignedIn) {
     return (
       <main className="p-6">
-        <h1 className="text-3xl font-semibold">Home Page</h1>
-        <p className="mt-2 text-muted-foreground">
-          Your personalized overview for searches, saved cars, and alerts.
-        </p>
-
-        <section className="mt-6 grid grid-cols-1 gap-4 md:min-h-130 md:grid-cols-3">
+        <section className="grid grid-cols-1 gap-4 md:h-[calc(100dvh-6.5rem)] md:min-h-130 md:grid-cols-3 md:items-stretch">
           <Card className="h-full md:col-span-2">
             <CardHeader>
               <CardTitle className="text-xl">Primary Workspace</CardTitle>
@@ -56,6 +51,9 @@ export default function RootPage() {
                   Compact panel occupying one-third of the right column height.
                 </CardDescription>
               </CardHeader>
+              <CardContent className="flex-1">
+                <div className="h-full min-h-20 rounded-lg border border-dashed border-border/60 bg-muted/20" />
+              </CardContent>
             </Card>
           </div>
         </section>
