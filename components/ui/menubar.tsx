@@ -12,7 +12,7 @@ export default function Menubar({ links }: { links: LinkItem[] }) {
 
   return (
     <div
-      className="hidden sm:flex items-center gap-2"
+      className="hidden sm:flex items-center gap-1"
       role="menubar"
       aria-label="Main menu"
     >
@@ -26,10 +26,10 @@ export default function Menubar({ links }: { links: LinkItem[] }) {
             role="menuitem"
             onClick={() => router.push(l.href)}
             className={cn(
-              "rounded-[8px] px-3 py-2 text-sm font-medium transition-all duration-200 ease-out",
+              "rounded-md px-3 py-1.5 text-sm font-medium transition-colors",
               active
-                ? "bg-white text-black font-heading shadow-sm scale-102"
-                : "bg-transparent text-white/90 hover:bg-[#4a4a4a] hover:text-white",
+                ? "bg-primary text-primary-foreground"
+                : "text-muted-foreground hover:bg-accent hover:text-accent-foreground",
             )}
           >
             {l.label}
