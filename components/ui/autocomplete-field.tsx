@@ -74,19 +74,21 @@ export function AutocompleteField({
         spellCheck={false}
       />
 
-      {/* Ghost text overlay — sits on top (absolute, after input in DOM → higher paint order) */}
+      {/* Ghost text overlay — inherits the exact same className as the input so
+          padding, font-size, and line-height are computed identically by the browser.
+          Border is suppressed since the div doesn't need it visually. */}
       {ghost && (
         <div
           className={cn(
+            className,
+            "border-0",
             "pointer-events-none select-none",
             "absolute top-0 left-0 right-0 z-20",
             "overflow-hidden whitespace-pre bg-transparent",
-            // Mirror the input's text styling exactly
-            "pt-2 text-[45px] leading-none",
           )}
           aria-hidden
         >
-          {/* Invisible spacer = width of typed text, pushes ghost to correct x offset */}
+          {/* Invisible spacer pushes ghost to the correct x offset */}
           <span className="invisible">{value}</span>
           <span className="text-foreground/30">{ghost}</span>
         </div>

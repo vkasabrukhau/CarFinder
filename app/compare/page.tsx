@@ -317,7 +317,6 @@ export default function ComparePage() {
   }
 
   const taken = takenIds();
-  const hasAnyCar = slots.some((s) => s !== null && s !== "picking");
 
   return (
     <main className="p-6 flex flex-col gap-6">
@@ -338,9 +337,9 @@ export default function ComparePage() {
               <button
                 key={i}
                 onClick={() => openPicker(i)}
-                className="flex flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed border-foreground/20 p-12 text-foreground/30 hover:border-foreground/40 hover:text-foreground/60 transition-colors w-full"
+                className="h-44 flex flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed border-foreground/20 text-foreground/30 hover:border-foreground/40 hover:text-foreground/60 transition-colors w-full"
               >
-                <Plus className="h-10 w-10" strokeWidth={1.5} />
+                <Plus className="h-8 w-8" strokeWidth={1.5} />
                 <span className="text-sm font-medium">Add a car</span>
               </button>
             );
@@ -349,8 +348,8 @@ export default function ComparePage() {
           if (slot === "picking") {
             const available = CAR_LIST.filter((c) => !taken.has(c.searchId));
             return (
-              <div key={i} className="rounded-xl border overflow-hidden flex flex-col">
-                <div className="flex items-center justify-between px-4 py-3 border-b bg-muted/40">
+              <div key={i} className="h-44 rounded-xl border overflow-hidden flex flex-col">
+                <div className="flex items-center justify-between px-4 py-3 border-b bg-muted/40 shrink-0">
                   <span className="text-sm font-semibold">Choose a car</span>
                   <button
                     onClick={() => clearSlot(i)}
@@ -360,12 +359,12 @@ export default function ComparePage() {
                     <X className="h-4 w-4" />
                   </button>
                 </div>
-                <div className="overflow-y-auto max-h-64 flex flex-col">
+                <div className="overflow-y-auto flex-1 flex flex-col">
                   {available.map((car) => (
                     <button
                       key={car.searchId}
                       onClick={() => selectCar(i, car)}
-                      className="w-full text-left px-4 py-2.5 hover:bg-accent transition-colors flex items-center justify-between gap-4 border-b last:border-0"
+                      className="w-full text-left px-4 py-2 hover:bg-accent transition-colors flex items-center justify-between gap-4 border-b last:border-0 shrink-0"
                     >
                       <span className="font-medium text-sm">{car.model}</span>
                       <span className="text-xs text-muted-foreground tabular-nums shrink-0">
@@ -384,26 +383,31 @@ export default function ComparePage() {
           }
 
           return (
-            <div key={i} className="rounded-xl border px-4 py-3 flex items-center justify-between gap-2">
-              <div>
-                <p className="font-semibold text-sm">{slot.model}</p>
-                <p className="text-xs text-muted-foreground">{slot.preference} · {slot.tracking}</p>
+            <div key={i} className="h-44 rounded-xl border px-4 py-4 flex flex-col justify-between">
+              <div className="flex items-start justify-between gap-2">
+                <div>
+                  <p className="font-semibold text-sm">{slot.model}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{slot.preference} · {slot.tracking}</p>
+                </div>
+                <button
+                  onClick={() => clearSlot(i)}
+                  className="text-muted-foreground hover:text-foreground transition-colors shrink-0 mt-0.5"
+                  aria-label="Remove"
+                >
+                  <X className="h-4 w-4" />
+                </button>
               </div>
-              <button
-                onClick={() => clearSlot(i)}
-                className="text-muted-foreground hover:text-foreground transition-colors shrink-0"
-                aria-label="Remove"
-              >
-                <X className="h-4 w-4" />
-              </button>
+              <div className="space-y-1">
+                <p className="text-xs text-muted-foreground tabular-nums">{slot.lowEnd} – {slot.highEnd}</p>
+                <p className="text-xs text-muted-foreground">Avg {slot.avg} · {slot.available} listings</p>
+              </div>
             </div>
           );
         })}
       </div>
 
-      {/* ── Comparison grid ── */}
-      {hasAnyCar && (
-        <div className="rounded-xl border overflow-hidden">
+      {/* ── Comparison grid ── always rendered so it doesn't cause layout shift */}
+      <div className="rounded-xl border overflow-hidden">
           <div className="grid grid-cols-[200px_1fr_1fr_1fr]">
 
             {/* Column header row */}
@@ -468,7 +472,6 @@ export default function ComparePage() {
             ])}
           </div>
         </div>
-      )}
     </main>
   );
 }
