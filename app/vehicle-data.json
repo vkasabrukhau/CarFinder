@@ -1,0 +1,7304 @@
+{
+  "Acura": {
+    "ADX": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "ADX AWD",
+        "ADX FWD"
+      ]
+    },
+    "ILX": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "ILX"
+      ]
+    },
+    "Integra": {
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Integra",
+        "Integra A-Spec"
+      ]
+    },
+    "MDX": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "MDX 2WD",
+        "MDX 4WD",
+        "MDX AWD",
+        "MDX AWD A-SPEC",
+        "MDX AWD Type-S",
+        "MDX FWD",
+        "MDX Hybrid AWD"
+      ]
+    },
+    "NSX": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "NSX Hybrid"
+      ]
+    },
+    "RDX": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "RDX 2WD",
+        "RDX 4WD",
+        "RDX AWD",
+        "RDX AWD A-SPEC",
+        "RDX FWD",
+        "RDX FWD A-SPEC"
+      ]
+    },
+    "RLX": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "RLX",
+        "RLX Hybrid"
+      ]
+    },
+    "TLX": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "TLX",
+        "TLX 2WD",
+        "TLX 4WD",
+        "TLX AWD",
+        "TLX AWD A-SPEC",
+        "TLX FWD",
+        "TLX FWD A-SPEC",
+        "TLX Type-S",
+        "TLX Type-S Perf Tire"
+      ]
+    },
+    "ZDX": {
+      "years": [
+        2024,
+        2026
+      ],
+      "trims": [
+        "ZDX AWD",
+        "ZDX AWD Type S",
+        "ZDX RWD"
+      ]
+    }
+  },
+  "Audi": {
+    "A3": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "A3",
+        "A3 Cabriolet",
+        "A3 Cabriolet quattro",
+        "A3 e-tron",
+        "A3 e-tron ultra",
+        "A3 quattro"
+      ]
+    },
+    "A4": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "A4",
+        "A4 S line quattro",
+        "A4 S-Line quattro",
+        "A4 Ultra",
+        "A4 quattro"
+      ]
+    },
+    "A4 allroad": {
+      "years": [
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "A4 allroad quattro"
+      ]
+    },
+    "A5": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "A5 Cabriolet quattro",
+        "A5 Coupe quattro",
+        "A5 Sportback S line quattro",
+        "A5 Sportback S-Line quattro",
+        "A5 Sportback quattro",
+        "A5 quattro"
+      ]
+    },
+    "A6": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "A6",
+        "A6 Sedan",
+        "A6 quattro"
+      ]
+    },
+    "A6 allroad": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "A6 Allroad",
+        "A6 Allroad quattro"
+      ]
+    },
+    "A7": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "A7",
+        "A7 TFSI e quattro",
+        "A7 quattro"
+      ]
+    },
+    "A8": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "A8",
+        "A8 L"
+      ]
+    },
+    "A8 L": {
+      "years": [
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "A8 L",
+        "A8 L quattro"
+      ]
+    },
+    "Q3": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Q3",
+        "Q3 S line quattro",
+        "Q3 S-Line",
+        "Q3 S-Line quattro",
+        "Q3 S-line quattro",
+        "Q3 quattro"
+      ]
+    },
+    "Q4": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Q4 40 e-tron",
+        "Q4 45 e-tron",
+        "Q4 50 e-tron quattro",
+        "Q4 55 e-tron quattro",
+        "Q4 Sportback 50 e-tron quattro",
+        "Q4 Sportback 55 e-tron quattro",
+        "Q4 e-tron",
+        "Q4 e-tron Sportback",
+        "Q4 e-tron Sportback quattro",
+        "Q4 e-tron quattro"
+      ]
+    },
+    "Q5": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Q5",
+        "Q5 Hybrid",
+        "Q5 Plug-In Hybrid quattro",
+        "Q5 S line quattro",
+        "Q5 S-Line quattro",
+        "Q5 Sportback",
+        "Q5 Sportback S line quattro",
+        "Q5 Sportback S-line quattro",
+        "Q5 Sportback TFSI quattro",
+        "Q5 TFSI e quattro",
+        "Q5 TFSI quattro",
+        "Q5 quattro"
+      ]
+    },
+    "Q6": {
+      "years": [
+        2025
+      ],
+      "trims": [
+        "Q6 Sportback e-tron quattro (19 inch wheels)",
+        "Q6 Sportback e-tron quattro (20 inch wheels)",
+        "Q6 e-tron (19 inch wheels)",
+        "Q6 e-tron (20 inch wheels)",
+        "Q6 e-tron quattro (19 inch wheels)",
+        "Q6 e-tron quattro (20 inch wheels)",
+        "Q6 e-tron ultra"
+      ]
+    },
+    "Q7": {
+      "years": [
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Q7",
+        "Q7 quattro"
+      ]
+    },
+    "Q8": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Q8",
+        "Q8 Sportback e-tron quattro",
+        "Q8 Sportback e-tron quattro (20 inch wheels)",
+        "Q8 Sportback e-tron quattro (21 inch wheels)",
+        "Q8 Sportback e-tron ultra quattro",
+        "Q8 e-tron quattro",
+        "Q8 e-tron quattro (20 inch wheels)",
+        "Q8 e-tron quattro (21 inch wheels)",
+        "Q8 quattro"
+      ]
+    },
+    "R8": {
+      "years": [
+        2015,
+        2017,
+        2018,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "R8",
+        "R8 2WD",
+        "R8 AWD",
+        "R8 Coupe",
+        "R8 Coupe RWD",
+        "R8 Coupe quattro",
+        "R8 GT RWD",
+        "R8 RWD",
+        "R8 Spyder",
+        "R8 Spyder 2WD",
+        "R8 Spyder AWD",
+        "R8 Spyder RWD",
+        "R8 Spyder quattro"
+      ]
+    },
+    "RS 3": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2022,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "RS 3"
+      ]
+    },
+    "RS 5": {
+      "years": [
+        2015,
+        2018,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "RS 5",
+        "RS 5 Cabriolet",
+        "RS 5 Coupe",
+        "RS 5 Sportback"
+      ]
+    },
+    "RS 6 Avant": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "RS 6 Avant"
+      ]
+    },
+    "RS 7": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "RS 7"
+      ]
+    },
+    "RS Q8": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "RS Q8",
+        "RS Q8 Performance"
+      ]
+    },
+    "RS e-tron GT": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "RS e-tron GT",
+        "RS e-tron GT Performance"
+      ]
+    },
+    "S e-tron GT": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "S e-tron GT (20 inch wheels)",
+        "S e-tron GT (21 inch wheels)"
+      ]
+    },
+    "S3": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "S3"
+      ]
+    },
+    "S4": {
+      "years": [
+        2015,
+        2016,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "S4"
+      ]
+    },
+    "S5": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "S5",
+        "S5 Cabriolet",
+        "S5 Coupe",
+        "S5 Sport Sedan",
+        "S5 Sportback"
+      ]
+    },
+    "S6": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "S6"
+      ]
+    },
+    "S7": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "S7"
+      ]
+    },
+    "S8": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "S8"
+      ]
+    },
+    "SQ5": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "SQ5",
+        "SQ5 Sportback"
+      ]
+    },
+    "SQ6": {
+      "years": [
+        2025
+      ],
+      "trims": [
+        "SQ6 Sportback e-tron",
+        "SQ6 e-tron"
+      ]
+    },
+    "SQ7": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "SQ7"
+      ]
+    },
+    "SQ8": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "SQ8",
+        "SQ8 Sportback e-tron (20 inch wheels)",
+        "SQ8 Sportback e-tron (21/22 inch wheels)",
+        "SQ8 e-tron (20 inch wheels)",
+        "SQ8 e-tron (21/22 inch wheels)"
+      ]
+    },
+    "TT": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "TT Coupe",
+        "TT Coupe quattro",
+        "TT Roadster",
+        "TT Roadster quattro"
+      ]
+    },
+    "TT RS": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "TT RS",
+        "TT RS Coupe"
+      ]
+    },
+    "TTS": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "TTS Coupe",
+        "TTS Coupe quattro"
+      ]
+    },
+    "e-tron": {
+      "years": [
+        2019,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "e-tron",
+        "e-tron S (20 inch wheels)",
+        "e-tron S (20in wheels)",
+        "e-tron S (21/22 inch wheels)",
+        "e-tron S Sportback (20 inch wheels)",
+        "e-tron S Sportback (21/22 inch wheels)",
+        "e-tron Sportback quattro",
+        "e-tron quattro"
+      ]
+    },
+    "e-tron GT": {
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "e-tron GT"
+      ]
+    },
+    "e-tron Sportback": {
+      "years": [
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "e-tron Sportback",
+        "e-tron Sportback quattro"
+      ]
+    }
+  },
+  "BMW": {
+    "228": {
+      "years": [
+        2026
+      ],
+      "trims": [
+        "228 Gran Coupe",
+        "228 xDrive Gran Coupe"
+      ]
+    },
+    "228i": {
+      "years": [
+        2015,
+        2016,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "228i",
+        "228i Convertible",
+        "228i Gran Coupe",
+        "228i xDrive",
+        "228i xDrive Convertible",
+        "228i xDrive Gran Coupe"
+      ]
+    },
+    "230i": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "230i Convertible",
+        "230i Coupe",
+        "230i xDrive Convertible",
+        "230i xDrive Coupe"
+      ]
+    },
+    "320i": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "trims": [
+        "320i",
+        "320i xDrive"
+      ]
+    },
+    "328d": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "trims": [
+        "328d",
+        "328d xDrive",
+        "328d xDrive Sports Wagon"
+      ]
+    },
+    "328i": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "328i",
+        "328i xDrive",
+        "328i xDrive Gran Turismo",
+        "328i xDrive Sports Wagon"
+      ]
+    },
+    "330e": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "330e",
+        "330e Sedan",
+        "330e xDrive",
+        "330e xDrive Sedan"
+      ]
+    },
+    "330i": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "330i",
+        "330i Sedan",
+        "330i xDrive",
+        "330i xDrive Gran Turismo",
+        "330i xDrive Sedan",
+        "330i xDrive Sports Wagon"
+      ]
+    },
+    "335i": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "335i",
+        "335i xDrive",
+        "335i xDrive Gran Turismo"
+      ]
+    },
+    "340i": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "340i",
+        "340i xDrive",
+        "340i xDrive Gran Turismo"
+      ]
+    },
+    "428i": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "428i Convertible",
+        "428i Coupe",
+        "428i Gran Coupe",
+        "428i xDrive Convertible",
+        "428i xDrive Coupe",
+        "428i xDrive Gran Coupe"
+      ]
+    },
+    "430i": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "430i Convertible",
+        "430i Coupe",
+        "430i Gran Coupe",
+        "430i xDrive Convertible",
+        "430i xDrive Coupe",
+        "430i xDrive Gran Coupe"
+      ]
+    },
+    "435i": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "435i Convertible",
+        "435i Coupe",
+        "435i Gran Coupe",
+        "435i xDrive Convertible",
+        "435i xDrive Coupe",
+        "435i xDrive Gran Coupe"
+      ]
+    },
+    "440i": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "440i Convertible",
+        "440i Coupe",
+        "440i Gran Coupe",
+        "440i xDrive Convertible",
+        "440i xDrive Coupe",
+        "440i xDrive Gran Coupe"
+      ]
+    },
+    "528i": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "528i",
+        "528i xDrive"
+      ]
+    },
+    "530e": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "530e",
+        "530e Sedan",
+        "530e xDrive",
+        "530e xDrive Sedan"
+      ]
+    },
+    "530i": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "530i",
+        "530i Sedan",
+        "530i xDrive",
+        "530i xDrive Sedan"
+      ]
+    },
+    "535d": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "535d",
+        "535d xDrive"
+      ]
+    },
+    "535i": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "535i",
+        "535i Gran Turismo",
+        "535i xDrive",
+        "535i xDrive Gran Turismo"
+      ]
+    },
+    "540d": {
+      "years": [
+        2018
+      ],
+      "trims": [
+        "540d xDrive"
+      ]
+    },
+    "540i": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "540i",
+        "540i Sedan",
+        "540i xDrive",
+        "540i xDrive Sedan"
+      ]
+    },
+    "550e": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "550e xDrive Sedan"
+      ]
+    },
+    "550i": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "550i",
+        "550i Gran Turismo",
+        "550i xDrive",
+        "550i xDrive Gran Turismo"
+      ]
+    },
+    "640i": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "640i Convertible",
+        "640i Coupe",
+        "640i Gran Coupe",
+        "640i xDrive Convertible",
+        "640i xDrive Coupe",
+        "640i xDrive Gran Coupe",
+        "640i xDrive Gran Turismo"
+      ]
+    },
+    "650i": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "650i Convertible",
+        "650i Coupe",
+        "650i Gran Coupe",
+        "650i xDrive Convertible",
+        "650i xDrive Coupe",
+        "650i xDrive Gran Coupe"
+      ]
+    },
+    "740Li": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "740Li",
+        "740Li xDrive"
+      ]
+    },
+    "740e": {
+      "years": [
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "740e xDrive"
+      ]
+    },
+    "740i": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "740i",
+        "740i Sedan",
+        "740i xDrive",
+        "740i xDrive Sedan"
+      ]
+    },
+    "745e": {
+      "years": [
+        2020,
+        2021
+      ],
+      "trims": [
+        "745e xDrive"
+      ]
+    },
+    "750Li": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "750Li",
+        "750Li xDrive"
+      ]
+    },
+    "750e": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "750e xDrive Sedan"
+      ]
+    },
+    "750i": {
+      "years": [
+        2015,
+        2016,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "750i",
+        "750i xDrive",
+        "750i xDrive Sedan"
+      ]
+    },
+    "760Li": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "760Li"
+      ]
+    },
+    "760i": {
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "760i xDrive Sedan"
+      ]
+    },
+    "840i": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "840i Convertible",
+        "840i Coupe",
+        "840i Gran Coupe",
+        "840i xDrive Convertible",
+        "840i xDrive Coupe",
+        "840i xDrive Gran Coupe"
+      ]
+    },
+    "ActiveHybrid 3": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "ActiveHybrid 3"
+      ]
+    },
+    "ActiveHybrid 5": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "ActiveHybrid 5"
+      ]
+    },
+    "ActiveHybrid 7": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "ActiveHybrid 7L"
+      ]
+    },
+    "Alpina B8": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "Alpina B8 Gran Coupe"
+      ]
+    },
+    "M2": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "M2",
+        "M2 CS Coupe",
+        "M2 Competition",
+        "M2 Competition Coupe",
+        "M2 Coupe",
+        "M2 Coupe CS"
+      ]
+    },
+    "M235": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "M235 xDrive Gran Coupe"
+      ]
+    },
+    "M235i": {
+      "years": [
+        2015,
+        2016,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "M235i",
+        "M235i Convertible",
+        "M235i xDrive",
+        "M235i xDrive Convertible",
+        "M235i xDrive Gran Coupe"
+      ]
+    },
+    "M240i": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "M240i Convertible",
+        "M240i Coupe",
+        "M240i Coupe M Performance",
+        "M240i xDrive Convertible",
+        "M240i xDrive Coupe",
+        "M240i xDrive Coupe M Performance"
+      ]
+    },
+    "M3": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "M3",
+        "M3 CS",
+        "M3 CS Sedan",
+        "M3 Competition",
+        "M3 Competition M xDrive Sedan",
+        "M3 Competition Sedan",
+        "M3 Sedan"
+      ]
+    },
+    "M340i": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "M340i",
+        "M340i Sedan",
+        "M340i xDrive",
+        "M340i xDrive Sedan"
+      ]
+    },
+    "M4": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "M4 CS",
+        "M4 CS Coupe",
+        "M4 CSL Coupe",
+        "M4 Competition Coupe",
+        "M4 Competition M xDrive Convertible",
+        "M4 Competition M xDrive Coupe",
+        "M4 Convertible",
+        "M4 Convertible Competition",
+        "M4 Coupe",
+        "M4 Coupe Competition",
+        "M4 DTM Champions Edition",
+        "M4 GTS"
+      ]
+    },
+    "M440i": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "M440i Convertible",
+        "M440i Coupe",
+        "M440i Gran Coupe",
+        "M440i xDrive Convertible",
+        "M440i xDrive Coupe",
+        "M440i xDrive Gran Coupe"
+      ]
+    },
+    "M5": {
+      "years": [
+        2015,
+        2016,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025,
+        2026
+      ],
+      "trims": [
+        "M5",
+        "M5 CS Sedan",
+        "M5 Competition",
+        "M5 Competition Sedan",
+        "M5 Sedan",
+        "M5 Touring"
+      ]
+    },
+    "M550i": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "M550i xDrive",
+        "M550i xDrive Sedan"
+      ]
+    },
+    "M6": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "M6 Convertible",
+        "M6 Coupe",
+        "M6 Gran Coupe"
+      ]
+    },
+    "M760i": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "M760i xDrive"
+      ]
+    },
+    "M8": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "M8 Competition Convertible",
+        "M8 Competition Coupe",
+        "M8 Competition Gran Coupe",
+        "M8 Convertible",
+        "M8 Coupe",
+        "M8 Gran Coupe"
+      ]
+    },
+    "M850i": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "M850i xDrive Convertible",
+        "M850i xDrive Coupe",
+        "M850i xDrive Gran Coupe"
+      ]
+    },
+    "X1": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "X1 M35i",
+        "X1 sDrive28i",
+        "X1 xDrive28i",
+        "X1 xDrive35i"
+      ]
+    },
+    "X2": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "X2 M35i",
+        "X2 sDrive28i",
+        "X2 xDrive28i"
+      ]
+    },
+    "X3": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "X3 M",
+        "X3 M Competition",
+        "X3 M40i",
+        "X3 M50",
+        "X3 M50i xDrive",
+        "X3 sDrive 28i",
+        "X3 sDrive28i",
+        "X3 sDrive30i",
+        "X3 xDrive28d",
+        "X3 xDrive28i",
+        "X3 xDrive30",
+        "X3 xDrive30e",
+        "X3 xDrive30i",
+        "X3 xDrive35i"
+      ]
+    },
+    "X4": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "X4 M",
+        "X4 M Competition",
+        "X4 M40i",
+        "X4 xDrive28i",
+        "X4 xDrive30i",
+        "X4 xDrive35i"
+      ]
+    },
+    "X5": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "X5 M",
+        "X5 M Competition",
+        "X5 M50i",
+        "X5 M60i xDrive",
+        "X5 sDrive35i",
+        "X5 sDrive40i",
+        "X5 xDrive 35d",
+        "X5 xDrive35d",
+        "X5 xDrive35i",
+        "X5 xDrive40e",
+        "X5 xDrive40i",
+        "X5 xDrive45e",
+        "X5 xDrive50e",
+        "X5 xDrive50i"
+      ]
+    },
+    "X6": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "X6 M",
+        "X6 M Competition",
+        "X6 M50i",
+        "X6 M60i xDrive",
+        "X6 sDrive35i",
+        "X6 sDrive40i",
+        "X6 xDrive35i",
+        "X6 xDrive40i",
+        "X6 xDrive50i"
+      ]
+    },
+    "X7": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "X7 M50i",
+        "X7 M60i xDrive",
+        "X7 xDrive40i",
+        "X7 xDrive50i"
+      ]
+    },
+    "XM": {
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "XM",
+        "XM Label"
+      ]
+    },
+    "Z4": {
+      "years": [
+        2015,
+        2016,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Z4 M40i",
+        "Z4 sDrive28i",
+        "Z4 sDrive30i",
+        "Z4 sDrive35i",
+        "Z4 sDrive35is"
+      ]
+    },
+    "i3": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "i3",
+        "i3 (94Ah)",
+        "i3 (94Ah) with Range Extender",
+        "i3 BEV",
+        "i3 BEV (60  Amp-hour battery)",
+        "i3 BEV (94 Amp-hour battery)",
+        "i3 REX",
+        "i3 REX  (94 Amp-hour battery)",
+        "i3 with Range Extender",
+        "i3s",
+        "i3s (94Ah)",
+        "i3s (94Ah) with Range Extender",
+        "i3s with Range Extender"
+      ]
+    },
+    "i4": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "i4 M50 Gran Coupe (19 inch wheels)",
+        "i4 M50 Gran Coupe (20 inch wheels)",
+        "i4 M60 xDrive Gran Coupe (19 inch Wheels)",
+        "i4 M60 xDrive Gran Coupe (20 inch Wheels)",
+        "i4 eDrive35 Gran Coupe (18 inch Wheels)",
+        "i4 eDrive35 Gran Coupe (19 inch Wheels)",
+        "i4 eDrive40 Gran Coupe (18 inch Wheels)",
+        "i4 eDrive40 Gran Coupe (18 inch wheels)",
+        "i4 eDrive40 Gran Coupe (19 inch Wheels)",
+        "i4 eDrive40 Gran Coupe (19 inch wheels)",
+        "i4 xDrive40 Gran Coupe (18 inch Wheels)",
+        "i4 xDrive40 Gran Coupe (19 inch Wheels)"
+      ]
+    },
+    "i5": {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "i5 M60 xDrive Sedan (19 inch Wheels)",
+        "i5 M60 xDrive Sedan (20 inch Wheels)",
+        "i5 M60 xDrive Sedan (21 inch Wheels)",
+        "i5 eDrive40 Sedan (19 inch Wheels)",
+        "i5 eDrive40 Sedan (20 inch Wheels)",
+        "i5 eDrive40 Sedan (21 inch Wheels)",
+        "i5 xDrive40 Sedan (19 inch Wheels)",
+        "i5 xDrive40 Sedan (20 inch Wheels)",
+        "i5 xDrive40 Sedan (21 inch Wheels)"
+      ]
+    },
+    "i7": {
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "i7 M70 xDrive Sedan (20 inch Wheels)",
+        "i7 M70 xDrive Sedan (21 inch Wheels)",
+        "i7 eDrive50 Sedan (19 inch Wheels)",
+        "i7 eDrive50 Sedan (20 inch Wheels)",
+        "i7 eDrive50 Sedan (21 inch Wheels)",
+        "i7 xDrive60 Sedan (19 inch Wheels)",
+        "i7 xDrive60 Sedan (19 inch wheels)",
+        "i7 xDrive60 Sedan (20 inch Wheels)",
+        "i7 xDrive60 Sedan (20 inch wheels)",
+        "i7 xDrive60 Sedan (21 inch Wheels)",
+        "i7 xDrive60 Sedan (21 inch wheels)",
+        "i7 xDrive60 Sedan (21inch wheels)"
+      ]
+    },
+    "i8": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2019,
+        2020
+      ],
+      "trims": [
+        "I8 Coupe",
+        "I8 Roadster",
+        "i8"
+      ]
+    },
+    "iX": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "iX M60 (21 inch Wheels)",
+        "iX M60 (21 inch wheels)",
+        "iX M60 (22 inch Wheels)",
+        "iX M60 (22 inch wheels)",
+        "iX M70 (21 inch Wheels)",
+        "iX M70 (22 inch Wheels)",
+        "iX M70 (23 inch Wheels)",
+        "iX xDrive40 (20 inch Wheels)",
+        "iX xDrive40 (21 inch Wheels)",
+        "iX xDrive40 (22 inch Wheels)",
+        "iX xDrive45 (20 inch Wheels)",
+        "iX xDrive45 (21 inch Wheels)",
+        "iX xDrive45 (22 inch Wheels)",
+        "iX xDrive45 (23 inch Wheels)",
+        "iX xDrive50 (20 inch wheels)",
+        "iX xDrive50 (21 inch wheels)",
+        "iX xDrive50 (22 inch wheels)",
+        "iX xDrive60 (20 inch Wheels)",
+        "iX xDrive60 (21 inch Wheels)",
+        "iX xDrive60 (22 inch Wheels)",
+        "iX xDrive60 (23 inch Wheels)"
+      ]
+    }
+  },
+  "Buick": {
+    "Cascada": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "Cascada"
+      ]
+    },
+    "Enclave": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Enclave AWD",
+        "Enclave FWD"
+      ]
+    },
+    "Encore": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Encore",
+        "Encore AWD",
+        "Encore FWD"
+      ]
+    },
+    "Encore GX": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Encore GX AWD",
+        "Encore GX FWD",
+        "Encore GX FWD (Flex Fuel)"
+      ]
+    },
+    "Envision": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Envision AWD",
+        "Envision FWD"
+      ]
+    },
+    "Envista": {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Envista",
+        "Envista (Flex Fuel)"
+      ]
+    },
+    "LaCrosse": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "LaCrosse",
+        "LaCrosse AWD",
+        "LaCrosse eAssist"
+      ]
+    },
+    "Regal": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Regal",
+        "Regal AWD",
+        "Regal eAssist"
+      ]
+    },
+    "Regal TourX": {
+      "years": [
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Regal TourX AWD"
+      ]
+    },
+    "Verano": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Verano"
+      ]
+    }
+  },
+  "Chevrolet": {
+    "Blazer": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Blazer AWD",
+        "Blazer EV AWD",
+        "Blazer EV AWD SS",
+        "Blazer EV FWD",
+        "Blazer EV FWD 22 inch tire",
+        "Blazer EV RWD",
+        "Blazer FWD"
+      ]
+    },
+    "Bolt EUV": {
+      "years": [
+        2022,
+        2023
+      ],
+      "trims": [
+        "Bolt EUV"
+      ]
+    },
+    "Bolt EV": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "Bolt EV"
+      ]
+    },
+    "Camaro": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "Camaro"
+      ]
+    },
+    "City Express": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "trims": [
+        "City Express Cargo Van"
+      ]
+    },
+    "Colorado": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Colorado 2WD",
+        "Colorado 4WD",
+        "Colorado Cab Chassis 2WD",
+        "Colorado Mud Terrain Tires 4WD",
+        "Colorado ZR2 4WD",
+        "Colorado ZR2 Bison 4WD"
+      ]
+    },
+    "Corvette": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Corvette",
+        "Corvette E-RAY",
+        "Corvette E-Ray",
+        "Corvette Z06",
+        "Corvette Z06 Carbon Aero",
+        "Corvette ZR1",
+        "Corvette ZR1X"
+      ]
+    },
+    "Cruze": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "Cruze",
+        "Cruze Eco",
+        "Cruze Hatchback",
+        "Cruze Premier",
+        "Cruze Premier Hatchback"
+      ]
+    },
+    "Cruze Limited": {
+      "years": [
+        2016
+      ],
+      "trims": [
+        "Cruze Limited",
+        "Cruze Limited  Eco"
+      ]
+    },
+    "Equinox": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Equinox AWD",
+        "Equinox EV AWD",
+        "Equinox EV AWD (11 kW Charger)",
+        "Equinox EV AWD (19 kW Charger)",
+        "Equinox EV FWD",
+        "Equinox FWD"
+      ]
+    },
+    "Express": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Express 2500 2WD Conversion Cargo",
+        "Express 2500 2WD Passenger",
+        "Express 3500 2WD Passenger"
+      ]
+    },
+    "Impala": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Impala",
+        "Impala Bi-Fuel  (CNG)"
+      ]
+    },
+    "Impala Limited": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "Impala Limited"
+      ]
+    },
+    "Malibu": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "Malibu",
+        "Malibu Hybrid"
+      ]
+    },
+    "Malibu Limited": {
+      "years": [
+        2016
+      ],
+      "trims": [
+        "Malibu Limited"
+      ]
+    },
+    "SS": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "SS"
+      ]
+    },
+    "Silverado": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Silverado (with Sport Mode) 2WD",
+        "Silverado (with Sport Mode) 4WD",
+        "Silverado (with Sport Mode) 4WD M6",
+        "Silverado 15 Hybrid 2WD",
+        "Silverado 15 Hybrid 4WD",
+        "Silverado 2WD",
+        "Silverado 4WD",
+        "Silverado 4WD  (Flex Fuel)",
+        "Silverado 4WD 4M",
+        "Silverado 4WD TrailBoss",
+        "Silverado 4WD ZR2",
+        "Silverado 4WD ZR2 (Sport/Off Road)",
+        "Silverado C10 2WD",
+        "Silverado C10 Cab Chassis 2WD",
+        "Silverado C10 XFE 2WD",
+        "Silverado C15 2WD",
+        "Silverado C15 Cab Chassis 2WD",
+        "Silverado Cab Chassis 2WD",
+        "Silverado Cab Chassis 4WD",
+        "Silverado EV",
+        "Silverado EV (11 kW Charger)",
+        "Silverado EV (19 kW Charger)",
+        "Silverado EV 14-mod battery, 11kW 15-mode charger",
+        "Silverado EV 14-mod battery, 11kW 6-mode charger",
+        "Silverado EV 20-mod battery, 11kW 15-mode charger",
+        "Silverado EV 20-mod battery, 19kW 15-mode charger",
+        "Silverado EV 20-mod battery, 19kW 6-mode charger",
+        "Silverado EV 24-mod battery, 19kW 6-mode charger",
+        "Silverado EV 2WT",
+        "Silverado EV 5WT (11 kW Charger)",
+        "Silverado EV 5WT (19 kW Charger)",
+        "Silverado EV 8WT",
+        "Silverado K10 4WD",
+        "Silverado K10 4WD TrailBoss",
+        "Silverado K10 Cab Chassis 4WD",
+        "Silverado K15 4WD",
+        "Silverado K15 Cab Chassis 4WD",
+        "Silverado Mud Terrain Tires (Sport Mode) 4WD",
+        "Silverado Mud Terrain Tires (with Sport Mode) 4WD",
+        "Silverado Mud Terrain Tires 4WD",
+        "Silverado Mud Terrain Tires 4WD  (Flex Fuel)",
+        "Silverado Mud Terrain Tires 4WD (Sport/off road)",
+        "Silverado Mud Terrain Tires 4WD 4M"
+      ]
+    },
+    "Silverado LD": {
+      "years": [
+        2019
+      ],
+      "trims": [
+        "Silverado LD C15 2WD",
+        "Silverado LD K15 4WD"
+      ]
+    },
+    "Sonic": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Sonic",
+        "Sonic 5",
+        "Sonic 5 RS",
+        "Sonic RS"
+      ]
+    },
+    "Spark": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Spark",
+        "Spark ACTIV",
+        "Spark EV"
+      ]
+    },
+    "Suburban": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Suburban 2WD",
+        "Suburban 4WD",
+        "Suburban C1500 2WD",
+        "Suburban K1500 4WD"
+      ]
+    },
+    "Tahoe": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Tahoe 2WD",
+        "Tahoe 4WD",
+        "Tahoe C1500 2WD",
+        "Tahoe K1500 4WD"
+      ]
+    },
+    "Trailblazer": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Trailblazer AWD",
+        "Trailblazer FWD",
+        "Trailblazer FWD (Flex Fuel)"
+      ]
+    },
+    "Traverse": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Traverse AWD",
+        "Traverse FWD"
+      ]
+    },
+    "Traverse Limited": {
+      "years": [
+        2024
+      ],
+      "trims": [
+        "Traverse Limited AWD",
+        "Traverse Limited FWD"
+      ]
+    },
+    "Trax": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Trax",
+        "Trax (Flex Fuel)",
+        "Trax AWD",
+        "Trax FWD"
+      ]
+    },
+    "Volt": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "Volt"
+      ]
+    }
+  },
+  "Chrysler": {
+    "200": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "200",
+        "200 AWD"
+      ]
+    },
+    "300": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "300",
+        "300 AWD"
+      ]
+    },
+    "Pacifica": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Pacifica",
+        "Pacifica AWD",
+        "Pacifica Hybrid"
+      ]
+    },
+    "Town and Country": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "Town and Country"
+      ]
+    },
+    "Voyager": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Voyager"
+      ]
+    }
+  },
+  "Dodge": {
+    "Challenger": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "Challenger",
+        "Challenger AWD",
+        "Challenger GT",
+        "Challenger SRT",
+        "Challenger SRT Demon 170",
+        "Challenger SRT Widebody",
+        "Challenger SRT8",
+        "Challenger Widebody"
+      ]
+    },
+    "Charger": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Charger",
+        "Charger 2-Dr Daytona R/T AWD 18in",
+        "Charger 2-Dr Daytona R/T AWD 20in Goodyear",
+        "Charger 2-Dr Daytona R/T AWD 20in Nexen",
+        "Charger 2-Dr Daytona Scat Pack Track Pack AWD",
+        "Charger 2-Dr Daytona Scat Pack Track Pack AWD A/S",
+        "Charger AWD",
+        "Charger Daytona R/T AWD 245/55ZR18",
+        "Charger Daytona R/T AWD 255/45R20",
+        "Charger Daytona R/T AWD 275/40R20",
+        "Charger Daytona R/T AWD 305/35ZR20",
+        "Charger Daytona Scat Pack AWD 305/35ZR20",
+        "Charger Daytona Scat Pack AWD 325/35ZR20 Rear",
+        "Charger Daytona Scat Pack AWD 325/35ZR20 Rear A/S",
+        "Charger R/T AWD",
+        "Charger SRT",
+        "Charger SRT Widebody",
+        "Charger SRT8",
+        "Charger Scat Pack AWD",
+        "Charger Widebody"
+      ]
+    },
+    "Dart": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "Dart",
+        "Dart Aero",
+        "Dart GT"
+      ]
+    },
+    "Durango": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Durango AWD",
+        "Durango RWD",
+        "Durango SRT AWD"
+      ]
+    },
+    "Grand Caravan": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Grand Caravan"
+      ]
+    },
+    "Hornet": {
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "Hornet AWD",
+        "Hornet PHEV AWD"
+      ]
+    },
+    "Journey": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Journey",
+        "Journey AWD",
+        "Journey FWD"
+      ]
+    },
+    "Viper": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Viper",
+        "Viper SRT"
+      ]
+    }
+  },
+  "Ford": {
+    "Bronco": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Bronco 4WD",
+        "Bronco Badlands 4WD",
+        "Bronco Black Diamond 4WD",
+        "Bronco Outer Banks 4WD",
+        "Bronco Raptor 4WD",
+        "Bronco Sasquatch 4WD"
+      ]
+    },
+    "Bronco Sport": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Bronco Sport 4WD",
+        "Bronco Sport Sasquatch 4WD"
+      ]
+    },
+    "C-Max": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "trims": [
+        "C-MAX Energi Plug-In Hybrid",
+        "C-MAX Energi Plug-in Hybrid",
+        "C-MAX Hybrid FWD"
+      ]
+    },
+    "Ecosport": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "EcoSport AWD",
+        "EcoSport FWD"
+      ]
+    },
+    "Edge": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "Edge AWD",
+        "Edge FWD"
+      ]
+    },
+    "Escape": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Escape AWD",
+        "Escape AWD HEV",
+        "Escape FWD",
+        "Escape FWD FFV",
+        "Escape FWD HEV",
+        "Escape FWD PHEV"
+      ]
+    },
+    "Expedition": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Expedition 2WD",
+        "Expedition 4WD",
+        "Expedition EL 2WD",
+        "Expedition EL 4WD",
+        "Expedition Timberline AWD"
+      ]
+    },
+    "Expedition EL": {
+      "years": [
+        2017
+      ],
+      "trims": [
+        "Expedition EL 2WD",
+        "Expedition EL 4WD"
+      ]
+    },
+    "Expedition MAX": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "Expedition MAX 2WD",
+        "Expedition MAX 4WD"
+      ]
+    },
+    "Explorer": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Explorer 2WD FFV",
+        "Explorer AWD",
+        "Explorer AWD FFV",
+        "Explorer FFV AWD",
+        "Explorer FWD",
+        "Explorer HEV AWD",
+        "Explorer HEV RWD",
+        "Explorer Platinum HEV AWD",
+        "Explorer Platinum HEV RWD",
+        "Explorer RWD",
+        "Explorer Timberline AWD",
+        "Explorer Tremor AWD"
+      ]
+    },
+    "F-150": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "F-150 Lightning 4WD",
+        "F-150 Lightning 4WD ER1",
+        "F-150 Lightning 4WD ER2",
+        "F-150 Lightning 4WD Extended Range",
+        "F-150 Lightning 4WD PRO ER1",
+        "F-150 Lightning 4WD SR",
+        "F-150 Lightning PRO 4WD Extended Range",
+        "F-150 Lightning Platinum 4WD"
+      ]
+    },
+    "Fiesta": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "Fiesta FWD",
+        "Fiesta SFE FWD",
+        "Fiesta ST FWD"
+      ]
+    },
+    "Flex": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "Flex AWD",
+        "Flex FWD"
+      ]
+    },
+    "Focus": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "trims": [
+        "Focus Electric",
+        "Focus FWD",
+        "Focus FWD FFV",
+        "Focus RS AWD",
+        "Focus SFE FWD",
+        "Focus ST FWD"
+      ]
+    },
+    "Fusion": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Fusion AWD",
+        "Fusion Energi Plug-in Hybrid",
+        "Fusion FWD",
+        "Fusion Hybrid FWD",
+        "Fusion Hybrid Taxi",
+        "Fusion Special Service PHEV",
+        "Fusion Special Service Vehicle PHEV"
+      ]
+    },
+    "GT": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "GT"
+      ]
+    },
+    "Maverick": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Maverick AWD",
+        "Maverick FWD",
+        "Maverick HEV AWD",
+        "Maverick HEV FWD",
+        "Maverick Lariat HEV AWD",
+        "Maverick Lobo AWD",
+        "Maverick Tremor AWD"
+      ]
+    },
+    "Mustang": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Mustang",
+        "Mustang Bullitt",
+        "Mustang Convertible",
+        "Mustang Dark Horse",
+        "Mustang HO Convertible",
+        "Mustang HO Coupe",
+        "Mustang Mach 1",
+        "Mustang Performance Package"
+      ]
+    },
+    "Mustang GTD": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "Mustang GTD"
+      ]
+    },
+    "Mustang Mach-E": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "MUSTANG MACH-E CAL RT 1 ER AWD",
+        "Mustang Mach-E AWD",
+        "Mustang Mach-E AWD Extended",
+        "Mustang Mach-E CAL RT 1 ER AWD",
+        "Mustang Mach-E CAL RT 1 ER RWD",
+        "Mustang Mach-E GT",
+        "Mustang Mach-E GT Performance",
+        "Mustang Mach-E RWD",
+        "Mustang Mach-E RWD California Route 1",
+        "Mustang Mach-E RWD Extended",
+        "Mustang Mach-E RWD LFP",
+        "Mustang Mach-E Rally"
+      ]
+    },
+    "Ranger": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Ranger 2WD",
+        "Ranger 2WD Incomplete",
+        "Ranger 4WD",
+        "Ranger RAPTOR 4WD",
+        "Ranger Tremor 4WD"
+      ]
+    },
+    "Taurus": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "Taurus AWD",
+        "Taurus AWD FFV",
+        "Taurus FWD",
+        "Taurus FWD FFV"
+      ]
+    },
+    "Transit": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Transit T150 Wagon",
+        "Transit T150 Wagon 2WD FFV",
+        "Transit T150 Wagon 4WD FFV",
+        "Transit T150 Wagon FFV"
+      ]
+    },
+    "Transit Connect": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "Transit Connect USPS",
+        "Transit Connect Van 2WD",
+        "Transit Connect Van FFV",
+        "Transit Connect Van FWD",
+        "Transit Connect Wagon FFV",
+        "Transit Connect Wagon FWD",
+        "Transit Connect Wagon LWB FFV",
+        "Transit Connect Wagon LWB FWD"
+      ]
+    }
+  },
+  "GMC": {
+    "Acadia": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Acadia AWD",
+        "Acadia FWD",
+        "Acadia Limited AWD",
+        "Acadia Limited FWD"
+      ]
+    },
+    "Canyon": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Canyon 2WD",
+        "Canyon 4WD",
+        "Canyon AT4X 4WD",
+        "Canyon AT4X AEV 4WD",
+        "Canyon Cab Chassis 2WD",
+        "Canyon Mud Terrain Tires 4WD"
+      ]
+    },
+    "Hummer EV Pickup": {
+      "years": [
+        2024,
+        2025
+      ],
+      "trims": [
+        "Hummer EV Pickup",
+        "Hummer EV Pickup 2M20",
+        "Hummer EV Pickup 2X",
+        "Hummer EV Pickup 3X",
+        "Hummer EV Pickup MT Tires",
+        "Hummer EV Pickup MT Tires 2M20",
+        "Hummer EV Pickup MT Tires 2X",
+        "Hummer EV Pickup MT Tires 3X"
+      ]
+    },
+    "Hummer EV SUV": {
+      "years": [
+        2024,
+        2025
+      ],
+      "trims": [
+        "Hummer EV SUV",
+        "Hummer EV SUV 2M20",
+        "Hummer EV SUV 2X",
+        "Hummer EV SUV 3X",
+        "Hummer EV SUV MT Tires",
+        "Hummer EV SUV MT Tires 2M20",
+        "Hummer EV SUV MT Tires 2X",
+        "Hummer EV SUV MT Tires 3X"
+      ]
+    },
+    "Savana": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Savana 2500 2WD (Passenger)",
+        "Savana 2500 2WD Conversion (cargo)",
+        "Savana 3500 2WD (Passenger)"
+      ]
+    },
+    "Sierra": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Sierra 15 Hybrid 2WD",
+        "Sierra 15 Hybrid 4WD",
+        "Sierra 2WD",
+        "Sierra 2WD with Sport Mode",
+        "Sierra 4WD",
+        "Sierra 4WD (Flex Fuel)",
+        "Sierra 4WD AT4",
+        "Sierra 4WD AT4X",
+        "Sierra 4WD with Sport Mode",
+        "Sierra C10 2WD",
+        "Sierra C10 Cab Chassis 2WD",
+        "Sierra C10 XFE 2WD",
+        "Sierra C15 2WD",
+        "Sierra C15 Cab Chassis 2WD",
+        "Sierra Cab Chassis 2WD",
+        "Sierra Cab Chassis 4WD",
+        "Sierra EV",
+        "Sierra EV 14-mod battery, 11kW 15-mode charger",
+        "Sierra EV 20-mod battery, 11kW 15-mode charger",
+        "Sierra EV 20-mod battery, 19kW 15-mode charger",
+        "Sierra K10 4WD",
+        "Sierra K10 4WD AT4",
+        "Sierra K10 Cab Chassis 4WD",
+        "Sierra K15 4WD",
+        "Sierra K15 Cab Chassis 4WD",
+        "Sierra LTD C15 2WD",
+        "Sierra LTD K15 4WD",
+        "Sierra Mud Terrain Tires 4WD",
+        "Sierra Mud Terrain Tires 4WD (Flex Fuel)",
+        "Sierra Mud Terrain Tires 4WD (Sport Mode)"
+      ]
+    },
+    "Terrain": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Terrain AWD",
+        "Terrain AWD  Denali/AT4",
+        "Terrain FWD"
+      ]
+    },
+    "Yukon": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Yukon 2WD",
+        "Yukon 4WD",
+        "Yukon C1500 2WD",
+        "Yukon C1500 XL 2WD",
+        "Yukon K1500 4WD",
+        "Yukon K1500 XL 4WD"
+      ]
+    },
+    "Yukon XL": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Yukon XL 2WD",
+        "Yukon XL 4WD"
+      ]
+    }
+  },
+  "Honda": {
+    "Accord": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Accord",
+        "Accord 2.0T Sport/Touring",
+        "Accord Hybrid",
+        "Accord Hybrid Sport/Touring",
+        "Accord SE",
+        "Accord Sport/Touring"
+      ]
+    },
+    "CR-V": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "CR-V 2WD",
+        "CR-V 4WD",
+        "CR-V AWD",
+        "CR-V AWD TrailSport",
+        "CR-V FWD",
+        "CR-V Hybrid AWD",
+        "CR-V Hybrid FWD",
+        "CR-V e-FCEV"
+      ]
+    },
+    "CR-Z": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "CR-Z"
+      ]
+    },
+    "Civic": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Civic",
+        "Civic 2Dr",
+        "Civic 4Dr",
+        "Civic 5Dr",
+        "Civic 5Dr - Type R",
+        "Civic 5Dr Sport",
+        "Civic HF",
+        "Civic Hybrid",
+        "Civic Natural Gas",
+        "Civic Si 2Dr",
+        "Civic Si 4Dr"
+      ]
+    },
+    "Clarity": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "Clarity EV",
+        "Clarity FCV",
+        "Clarity Plug-in Hybrid"
+      ]
+    },
+    "Crosstour": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "Crosstour 2WD",
+        "Crosstour 4WD"
+      ]
+    },
+    "Fit": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Fit"
+      ]
+    },
+    "HR-V": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "HR-V 2WD",
+        "HR-V 4WD",
+        "HR-V AWD",
+        "HR-V FWD"
+      ]
+    },
+    "Insight": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Insight",
+        "Insight Touring"
+      ]
+    },
+    "Odyssey": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Odyssey"
+      ]
+    },
+    "Passport": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Passport AWD",
+        "Passport AWD Trailsport",
+        "Passport FWD"
+      ]
+    },
+    "Pilot": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Pilot 2WD",
+        "Pilot 4WD",
+        "Pilot AWD",
+        "Pilot AWD Touring/Elite/Black",
+        "Pilot AWD TrailSport",
+        "Pilot FWD"
+      ]
+    },
+    "Prelude": {
+      "years": [
+        2026
+      ],
+      "trims": [
+        "Prelude"
+      ]
+    },
+    "Prologue": {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Prologue AWD",
+        "Prologue AWD Elite",
+        "Prologue AWD Touring",
+        "Prologue FWD"
+      ]
+    },
+    "Ridgeline": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Ridgeline AWD",
+        "Ridgeline AWD TrailSport",
+        "Ridgeline FWD"
+      ]
+    }
+  },
+  "Hyundai": {
+    "Accent": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Accent"
+      ]
+    },
+    "Azera": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Azera",
+        "Azera Limited"
+      ]
+    },
+    "Elantra": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Elantra",
+        "Elantra Coupe",
+        "Elantra GT",
+        "Elantra Hybrid",
+        "Elantra Hybrid Blue",
+        "Elantra Limited",
+        "Elantra SE",
+        "Elantra w/Stop-Start"
+      ]
+    },
+    "Elantra GT": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Elantra GT"
+      ]
+    },
+    "Elantra N": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Elantra N",
+        "Elantra non-ISG"
+      ]
+    },
+    "Equus": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "Equus"
+      ]
+    },
+    "Genesis": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "Genesis AWD",
+        "Genesis RWD"
+      ]
+    },
+    "Genesis Coupe": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "Genesis Coupe"
+      ]
+    },
+    "Ioniq": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Ioniq",
+        "Ioniq Blue",
+        "Ioniq Electric",
+        "Ioniq Plug-in Hybrid"
+      ]
+    },
+    "Ioniq 5": {
+      "years": [
+        2022,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Ioniq 5 AWD (19 inch Wheels)",
+        "Ioniq 5 AWD (19inch Wheels)",
+        "Ioniq 5 AWD (20 inch Wheels)",
+        "Ioniq 5 AWD (20inch Wheels)",
+        "Ioniq 5 AWD (Long Range)",
+        "Ioniq 5 AWD XRT",
+        "Ioniq 5 Long range AWD",
+        "Ioniq 5 Long range RWD",
+        "Ioniq 5 RWD",
+        "Ioniq 5 RWD (Long Range)",
+        "Ioniq 5 RWD (Standard Range)",
+        "Ioniq 5 Robo taxi",
+        "Ioniq 5 Standard range",
+        "Ioniq 5 Standard range RWD"
+      ]
+    },
+    "Ioniq 5 N": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "Ioniq 5 N"
+      ]
+    },
+    "Ioniq 6": {
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "Ioniq 6 AWD (18 inch Wheels)",
+        "Ioniq 6 AWD (20 inch Wheels)",
+        "Ioniq 6 Long range AWD (18 inch Wheels)",
+        "Ioniq 6 Long range AWD (20 inch Wheels)",
+        "Ioniq 6 Long range RWD (18 inch Wheels)",
+        "Ioniq 6 Long range RWD (20 inch Wheels)",
+        "Ioniq 6 RWD (18 inch Wheels)",
+        "Ioniq 6 RWD (20 inch Wheels)",
+        "Ioniq 6 Standard Range",
+        "Ioniq 6 Standard Range RWD"
+      ]
+    },
+    "Ioniq 9": {
+      "years": [
+        2026
+      ],
+      "trims": [
+        "Ioniq 9 AWD",
+        "Ioniq 9 AWD Performance",
+        "Ioniq 9 RWD"
+      ]
+    },
+    "Kona": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Kona AWD",
+        "Kona AWD SX2 1.6T 8AT AWD",
+        "Kona AWD w/Stop-Start",
+        "Kona Electric",
+        "Kona Electric (17 inch Wheels)",
+        "Kona Electric (19 inch Wheels)",
+        "Kona Electric Long Range",
+        "Kona Electric Standard Range",
+        "Kona FWD",
+        "Kona FWD SX2 1.6T 8AT FWD",
+        "Kona FWD w/Stop-Start"
+      ]
+    },
+    "Kona N": {
+      "years": [
+        2022,
+        2023
+      ],
+      "trims": [
+        "Kona N"
+      ]
+    },
+    "Nexo": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Nexo",
+        "Nexo Blue"
+      ]
+    },
+    "Palisade": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Palisade AWD",
+        "Palisade FWD",
+        "Palisade Hybrid AWD",
+        "Palisade Hybrid FWD",
+        "Palisade Hybrid FWD Blue",
+        "Palisade XRT Pro"
+      ]
+    },
+    "Santa Cruz": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Santa Cruz AWD",
+        "Santa Cruz AWD NX4 OB 2.5 AWD 8AT",
+        "Santa Cruz AWD NX4 OB 2.5T AWD 8AT",
+        "Santa Cruz FWD",
+        "Santa Cruz XRT AWD"
+      ]
+    },
+    "Santa Fe": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Santa Fe AWD",
+        "Santa Fe AWD XRT",
+        "Santa Fe FWD",
+        "Santa Fe Hybrid",
+        "Santa Fe Hybrid AWD",
+        "Santa Fe Hybrid Blue",
+        "Santa Fe Hybrid FWD",
+        "Santa Fe Plug-in Hybrid",
+        "Santa Fe Ultimate AWD",
+        "Santa Fe Ultimate FWD"
+      ]
+    },
+    "Santa Fe Sport": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "trims": [
+        "Santa Fe Sport AWD",
+        "Santa Fe Sport FWD",
+        "Santa Fe Sport Ultimate AWD",
+        "Santa Fe Sport Ultimate FWD"
+      ]
+    },
+    "Santa Fe XL": {
+      "years": [
+        2019
+      ],
+      "trims": [
+        "Santa Fe XL AWD",
+        "Santa Fe XL FWD",
+        "Santa Fe XL Ultimate AWD",
+        "Santa Fe XL Ultimate FWD"
+      ]
+    },
+    "Sonata": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Sonata",
+        "Sonata AWD",
+        "Sonata FWD",
+        "Sonata FWD w/Stop-Start",
+        "Sonata Hybrid",
+        "Sonata Hybrid Blue",
+        "Sonata Hybrid Limited",
+        "Sonata Hybrid SE",
+        "Sonata Limited",
+        "Sonata Plug-in Hybrid",
+        "Sonata SE",
+        "Sonata Sport Limited"
+      ]
+    },
+    "Tucson": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Tucson 2WD",
+        "Tucson AWD",
+        "Tucson Eco AWD",
+        "Tucson Eco FWD",
+        "Tucson FWD",
+        "Tucson Fuel Cell",
+        "Tucson Hybrid",
+        "Tucson Hybrid Blue",
+        "Tucson Plug-in Hybrid"
+      ]
+    },
+    "Veloster": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "Veloster"
+      ]
+    },
+    "Veloster N": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Veloster N"
+      ]
+    },
+    "Venue": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Venue"
+      ]
+    }
+  },
+  "Infiniti": {
+    "Q40": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "Q40",
+        "Q40 AWD"
+      ]
+    },
+    "Q50": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "Q50",
+        "Q50 AWD",
+        "Q50 Hybrid",
+        "Q50 Hybrid AWD",
+        "Q50 Red Sport",
+        "Q50 Red Sport  AWD",
+        "Q50S",
+        "Q50S AWD",
+        "Q50S Hybrid",
+        "Q50S Hybrid AWD",
+        "Q50S Red Sport",
+        "Q50S Red Sport  AWD",
+        "Q50a",
+        "Q50a AWD"
+      ]
+    },
+    "Q60": {
+      "years": [
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Q60",
+        "Q60 AWD",
+        "Q60 Convertible",
+        "Q60 Red Sport",
+        "Q60 Red Sport AWD",
+        "Q60S Red Sport",
+        "Q60S Red Sport AWD"
+      ]
+    },
+    "Q70": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "Q70",
+        "Q70 AWD",
+        "Q70 Hybrid"
+      ]
+    },
+    "QX30": {
+      "years": [
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "QX30",
+        "QX30 AWD"
+      ]
+    },
+    "QX50": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "QX50",
+        "QX50 AWD"
+      ]
+    },
+    "QX55": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "QX55 AWD"
+      ]
+    },
+    "QX60": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "QX60 AWD",
+        "QX60 FWD",
+        "QX60 Hybrid AWD",
+        "QX60 Hybrid FWD"
+      ]
+    },
+    "QX70": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "QX70 AWD",
+        "QX70 RWD"
+      ]
+    },
+    "QX80": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "QX80 2WD",
+        "QX80 4WD",
+        "QX80 4WD (over 6000 lbs curb weight)"
+      ]
+    }
+  },
+  "Jeep": {
+    "Cherokee": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2026
+      ],
+      "trims": [
+        "Cherokee 4WD",
+        "Cherokee 4WD Active Drive II",
+        "Cherokee AWD",
+        "Cherokee FWD",
+        "Cherokee Trailhawk 4WD"
+      ]
+    },
+    "Compass": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Compass 4WD",
+        "Compass FWD"
+      ]
+    },
+    "Gladiator": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Gladiator 4WD",
+        "Gladiator EcoDiesel 4WD",
+        "Gladiator Pickup 4WD",
+        "Gladiator Rubic EcoDiesel 4WD",
+        "Gladiator Rubicon EcoDiesel 4WD"
+      ]
+    },
+    "Grand Cherokee": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Grand Cherokee 2WD",
+        "Grand Cherokee 4WD",
+        "Grand Cherokee 4xe",
+        "Grand Cherokee SRT 4WD",
+        "Grand Cherokee SRT8 4WD",
+        "Grand Cherokee TrackHawk 4WD",
+        "Grand Cherokee Trackhawk 4WD",
+        "Grand Cherokee WK 2WD",
+        "Grand Cherokee WK 4WD"
+      ]
+    },
+    "Grand Cherokee L": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Grand Cherokee L 2WD",
+        "Grand Cherokee L 4WD"
+      ]
+    },
+    "Grand Wagoneer": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Grand Wagoneer 2WD",
+        "Grand Wagoneer 4WD",
+        "Grand Wagoneer L 4WD"
+      ]
+    },
+    "Grand Wagoneer L": {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Grand Wagoneer L 2WD",
+        "Grand Wagoneer L 4WD"
+      ]
+    },
+    "Patriot": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Patriot 4WD",
+        "Patriot FWD"
+      ]
+    },
+    "Renegade": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "Renegade 2WD",
+        "Renegade 4WD",
+        "Renegade Trailhawk 4WD"
+      ]
+    },
+    "Wagoneer": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "Wagoneer 2WD",
+        "Wagoneer 4WD",
+        "Wagoneer L 2WD",
+        "Wagoneer L 4WD"
+      ]
+    },
+    "Wagoneer L": {
+      "years": [
+        2024,
+        2025
+      ],
+      "trims": [
+        "Wagoneer L 2WD",
+        "Wagoneer L 4WD"
+      ]
+    },
+    "Wagoneer S": {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Wagoneer S AWD (Falken tire)",
+        "Wagoneer S AWD (Pirelli tire)"
+      ]
+    },
+    "Wrangler": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Wrangler 2dr 4WD",
+        "Wrangler 4WD",
+        "Wrangler 4dr 4WD",
+        "Wrangler 4dr 4xe",
+        "Wrangler 4dr EcoDiesel 4WD",
+        "Wrangler Rubic 4dr EcoDiesel 4WD",
+        "Wrangler Rubicon 2dr 4WD",
+        "Wrangler Rubicon 4dr 4WD",
+        "Wrangler Unlimited 4WD"
+      ]
+    }
+  },
+  "Kia": {
+    "Cadenza": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Cadenza"
+      ]
+    },
+    "Carnival": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Carnival",
+        "Carnival Hybrid"
+      ]
+    },
+    "EV6": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "EV6 AWD (Long Range)",
+        "EV6 AWD GT",
+        "EV6 Long Range AWD (19 inch Wheels)",
+        "EV6 Long Range AWD (19 inch tires)",
+        "EV6 Long Range AWD (20 inch Wheels)",
+        "EV6 Long Range AWD (20 inch tires)",
+        "EV6 Long Range RWD",
+        "EV6 RWD (Long Range)",
+        "EV6 RWD (Standard Range)",
+        "EV6 Standard Range RWD"
+      ]
+    },
+    "EV9": {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "EV9 GT",
+        "EV9 Long Range AWD",
+        "EV9 Long Range AWD GT-Line",
+        "EV9 Long Range RWD",
+        "EV9 Standard Range RWD"
+      ]
+    },
+    "Forte": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "Forte",
+        "Forte 5",
+        "Forte FE",
+        "Forte Koup"
+      ]
+    },
+    "Forte Koup": {
+      "years": [
+        2016,
+        2017
+      ],
+      "trims": [
+        "Forte Koup"
+      ]
+    },
+    "K4": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "K4",
+        "K4 4DR w/ DMS",
+        "K4 Hatchback",
+        "K4 without DMS"
+      ]
+    },
+    "K5": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "K5",
+        "K5 AWD",
+        "K5 w/Stop-Start"
+      ]
+    },
+    "K900": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "K900"
+      ]
+    },
+    "Niro": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Niro",
+        "Niro Electric",
+        "Niro FE",
+        "Niro Plug-in Hybrid",
+        "Niro Touring"
+      ]
+    },
+    "Optima": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Optima",
+        "Optima FE",
+        "Optima Hybrid",
+        "Optima Hybrid EX",
+        "Optima Plug-in Hybrid",
+        "Optima S"
+      ]
+    },
+    "Rio": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "Rio",
+        "Rio Eco"
+      ]
+    },
+    "Sedona": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "Sedona",
+        "Sedona SX",
+        "Sedona SXL"
+      ]
+    },
+    "Seltos": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Seltos AWD",
+        "Seltos FWD"
+      ]
+    },
+    "Sorento": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Sorento AWD",
+        "Sorento FE AWD",
+        "Sorento FWD",
+        "Sorento Hybrid",
+        "Sorento Hybrid AWD",
+        "Sorento Hybrid FWD",
+        "Sorento Plug-in Hybrid"
+      ]
+    },
+    "Soul": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "Soul",
+        "Soul ECO dynamics",
+        "Soul Eco dynamics",
+        "Soul Electric"
+      ]
+    },
+    "Sportage": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Sportage AWD",
+        "Sportage FE AWD",
+        "Sportage FE FWD",
+        "Sportage FWD",
+        "Sportage Hybrid AWD",
+        "Sportage Hybrid FWD",
+        "Sportage Plug-in Hybrid",
+        "Sportage SX AWD",
+        "Sportage SX FWD",
+        "Sportage X-pro"
+      ]
+    },
+    "Stinger": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "Stinger AWD",
+        "Stinger RWD"
+      ]
+    },
+    "Telluride": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "Telluride AWD",
+        "Telluride FWD"
+      ]
+    }
+  },
+  "Lexus": {
+    "CT": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "CT 200h"
+      ]
+    },
+    "ES": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "ES 250 AWD",
+        "ES 300h",
+        "ES 350",
+        "ES 350 F Sport"
+      ]
+    },
+    "GS": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "GS 200t",
+        "GS 200t F Sport",
+        "GS 300",
+        "GS 300 F Sport",
+        "GS 350",
+        "GS 350 AWD",
+        "GS 350 F Sport",
+        "GS 450h",
+        "GS F"
+      ]
+    },
+    "GX": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "GX 460",
+        "GX 550"
+      ]
+    },
+    "IS": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "IS 200t",
+        "IS 250",
+        "IS 250 AWD",
+        "IS 250 C",
+        "IS 300",
+        "IS 300 AWD",
+        "IS 350",
+        "IS 350 AWD",
+        "IS 350 C",
+        "IS 500"
+      ]
+    },
+    "LC": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "LC 500",
+        "LC 500 Convertible",
+        "LC 500h"
+      ]
+    },
+    "LS": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "LS 460",
+        "LS 460 AWD",
+        "LS 460 L",
+        "LS 460 L AWD",
+        "LS 500",
+        "LS 500 AWD",
+        "LS 500h",
+        "LS 500h AWD",
+        "LS 600h L"
+      ]
+    },
+    "LX": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "LX 570",
+        "LX 600",
+        "LX 700h"
+      ]
+    },
+    "NX": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "NX 200t",
+        "NX 200t AWD",
+        "NX 200t AWD F Sport",
+        "NX 250",
+        "NX 250 AWD",
+        "NX 300",
+        "NX 300 AWD",
+        "NX 300 AWD F Sport",
+        "NX 300h",
+        "NX 300h AWD",
+        "NX 350 AWD",
+        "NX 350 AWD F Sport",
+        "NX 350h",
+        "NX 350h AWD",
+        "NX 450h Plus AWD"
+      ]
+    },
+    "RC": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "RC 200t",
+        "RC 300",
+        "RC 300 AWD",
+        "RC 350",
+        "RC 350 AWD",
+        "RC F"
+      ]
+    },
+    "RX": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "RX 350",
+        "RX 350 AWD",
+        "RX 350 L",
+        "RX 350 L AWD",
+        "RX 350h AWD",
+        "RX 450h",
+        "RX 450h AWD",
+        "RX 450h L AWD",
+        "RX 450h Plus AWD",
+        "RX 500h AWD"
+      ]
+    },
+    "RZ": {
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "RZ 300e (18 inch wheels)",
+        "RZ 300e (20 inch wheels)",
+        "RZ 350e FWD (18 inch wheels)",
+        "RZ 350e FWD (20 inch wheels)",
+        "RZ 450e AWD (18 inch Wheels)",
+        "RZ 450e AWD (18 inch wheels)",
+        "RZ 450e AWD (20 inch Wheels)",
+        "RZ 450e AWD (20 inch wheels - 235/50R20)",
+        "RZ 450e AWD (20 inch wheels - 235/50R20,255/45R20)",
+        "RZ 450e AWD (20 inch wheels)",
+        "RZ 550e AWD"
+      ]
+    },
+    "TX": {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "TX 350",
+        "TX 350 AWD",
+        "TX 500h AWD",
+        "TX 550h Plus AWD"
+      ]
+    },
+    "UX": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "UX 200",
+        "UX 250h",
+        "UX 250h AWD",
+        "UX 300h",
+        "UX 300h AWD"
+      ]
+    }
+  },
+  "Mazda": {
+    "CX-3": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "CX-3 2WD",
+        "CX-3 4WD"
+      ]
+    },
+    "CX-30": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "CX-30 2WD",
+        "CX-30 4WD"
+      ]
+    },
+    "CX-5": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "CX-5 2WD",
+        "CX-5 4WD"
+      ]
+    },
+    "CX-50": {
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "CX-50 4WD"
+      ]
+    },
+    "CX-70": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "CX-70 4WD",
+        "CX-70 4WD PHEV",
+        "CX-70 Hybrid Boost High Power 4WD",
+        "CX-70 Hybrid Boost Low Power 4WD",
+        "CX-70 SC 4WD"
+      ]
+    },
+    "CX-9": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "CX-9 2WD",
+        "CX-9 4WD"
+      ]
+    },
+    "CX-90": {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "CX-90 4WD",
+        "CX-90 4WD PHEV"
+      ]
+    },
+    "MX-30": {
+      "years": [
+        2022,
+        2023
+      ],
+      "trims": [
+        "MX-30"
+      ]
+    },
+    "MX-5": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "MX-5"
+      ]
+    }
+  },
+  "Mercedes-Benz": {
+    "AMG GT": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "AMG GT",
+        "AMG GT 43 (coupe)",
+        "AMG GT 43 4matic Plus",
+        "AMG GT 53 4matic Plus",
+        "AMG GT 55 4matic Plus (coupe)",
+        "AMG GT 63 4matic Plus",
+        "AMG GT 63 4matic Plus (coupe)",
+        "AMG GT 63 PRO 4matic Plus (coupe)",
+        "AMG GT 63 S 4matic Plus",
+        "AMG GT 63 S E Performance",
+        "AMG GT 63 S E Performance (coupe)",
+        "AMG GT Black Series",
+        "AMG GT C Coupe",
+        "AMG GT C Roadster",
+        "AMG GT Coupe",
+        "AMG GT R Coupe",
+        "AMG GT R Roadster",
+        "AMG GT Roadster",
+        "AMG GT S",
+        "AMG GT S Coupe"
+      ]
+    },
+    "B-Class": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "B-Class Electric Drive"
+      ]
+    },
+    "CLE": {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "CLE300 4matic (Convertible)",
+        "CLE300 4matic (Coupe)",
+        "CLE450 4matic (Convertible)",
+        "CLE450 4matic (Coupe)"
+      ]
+    },
+    "Metris": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "Metris (Cargo Van)",
+        "Metris (Cargo Van, LWB)",
+        "Metris (Passenger Van)",
+        "Metris (US Postal Long)",
+        "Metris (US Postal)"
+      ]
+    }
+  },
+  "Mitsubishi": {
+    "Eclipse Cross": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Eclipse Cross 2WD",
+        "Eclipse Cross 4WD",
+        "Eclipse Cross ES 2WD",
+        "Eclipse Cross ES 4WD"
+      ]
+    },
+    "Lancer": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Lancer",
+        "Lancer 4WD",
+        "Lancer AWD"
+      ]
+    },
+    "Lancer Evolution": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "Lancer Evolution"
+      ]
+    },
+    "Mirage": {
+      "years": [
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "Mirage"
+      ]
+    },
+    "Mirage G4": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "Mirage G4"
+      ]
+    },
+    "Outlander": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Outlander 2WD",
+        "Outlander 4WD",
+        "Outlander PHEV"
+      ]
+    },
+    "Outlander Sport": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Outlander Sport 2WD",
+        "Outlander Sport 4WD"
+      ]
+    },
+    "i-MiEV": {
+      "years": [
+        2016,
+        2017
+      ],
+      "trims": [
+        "i-MiEV"
+      ]
+    }
+  },
+  "Nissan": {
+    "370Z": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "370Z",
+        "370Z Roadster"
+      ]
+    },
+    "Altima": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Altima",
+        "Altima AWD",
+        "Altima AWD SR/Platinum",
+        "Altima SL/SR",
+        "Altima SR",
+        "Altima SR/Platinum",
+        "Altima SV/SL"
+      ]
+    },
+    "Armada": {
+      "years": [
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Armada 2WD",
+        "Armada 4WD",
+        "Armada 4WD PRO-4X"
+      ]
+    },
+    "Frontier": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Frontier 2WD",
+        "Frontier 2WD FFV",
+        "Frontier 4WD",
+        "Frontier 4WD FFV",
+        "Frontier 4WD PRO4X"
+      ]
+    },
+    "GT-R": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024
+      ],
+      "trims": [
+        "GT-R"
+      ]
+    },
+    "Juke": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Juke",
+        "Juke AWD",
+        "Juke Nismo RS",
+        "Juke Nismo RS AWD"
+      ]
+    },
+    "Kicks": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "Kicks"
+      ]
+    },
+    "Kicks Play": {
+      "years": [
+        2025
+      ],
+      "trims": [
+        "Kicks Play"
+      ]
+    },
+    "Leaf": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "LEAF",
+        "LEAF 75kWh (18 inch alloy Wheels)",
+        "LEAF 75kWh (18 inch steel Wheels)",
+        "LEAF 75kWh (19 inch Wheels)",
+        "LEAF SV",
+        "Leaf",
+        "Leaf (24 kW-hr battery pack)",
+        "Leaf (30 kW-hr battery pack)",
+        "Leaf (40 kW-hr battery pack)",
+        "Leaf (62 kW-hr battery pack)",
+        "Leaf SV/SL (62 kW-hr battery pack)"
+      ]
+    },
+    "Maxima": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "Maxima"
+      ]
+    },
+    "Murano": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Murano AWD",
+        "Murano FWD",
+        "Murano Hybrid AWD",
+        "Murano Hybrid FWD"
+      ]
+    },
+    "NV200": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "NV200 Cargo Van",
+        "NV200 NYC Taxi"
+      ]
+    },
+    "Pathfinder": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Pathfinder 2WD",
+        "Pathfinder 4WD",
+        "Pathfinder 4WD Platinum",
+        "Pathfinder 4WD Rock Creek",
+        "Pathfinder 4WD SL/Platinum",
+        "Pathfinder Hybrid 2WD",
+        "Pathfinder Hybrid 4WD"
+      ]
+    },
+    "Quest": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Quest"
+      ]
+    },
+    "Rogue": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Rogue AWD",
+        "Rogue AWD  SV/SL/Platinum",
+        "Rogue AWD Rock Creek",
+        "Rogue AWD SL/Platinum",
+        "Rogue FWD",
+        "Rogue FWD  SV/SL/Platinum",
+        "Rogue FWD SL/Platinum",
+        "Rogue Hybrid  AWD",
+        "Rogue Hybrid  FWD",
+        "Rogue Select AWD",
+        "Rogue Select FWD"
+      ]
+    },
+    "Rogue Sport": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Rogue Sport",
+        "Rogue Sport AWD",
+        "Rogue Sport FWD"
+      ]
+    },
+    "Sentra": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Sentra",
+        "Sentra (2-mode)",
+        "Sentra (3-mode)",
+        "Sentra FE",
+        "Sentra Nismo",
+        "Sentra SL/SR",
+        "Sentra SR"
+      ]
+    },
+    "Titan": {
+      "years": [
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "Titan 2WD",
+        "Titan 4WD",
+        "Titan 4WD  PRO4X",
+        "Titan 4WD PRO-4X",
+        "Titan 4WD PRO4X"
+      ]
+    },
+    "Versa": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "Versa"
+      ]
+    },
+    "Xterra": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "Xterra 2WD",
+        "Xterra 4WD"
+      ]
+    }
+  },
+  "Ram": {
+    "1500": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "1500 2WD",
+        "1500 4WD",
+        "1500 Classic 2WD",
+        "1500 Classic 4WD",
+        "1500 HFE 2WD",
+        "1500 HO 4WD",
+        "1500 RHO 4WD",
+        "1500 TRX 4WD"
+      ]
+    },
+    "Promaster City": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Promaster City"
+      ]
+    }
+  },
+  "Subaru": {
+    "Ascent": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Ascent",
+        "Ascent Limited/Touring",
+        "Ascent Limited/Touring/Onyx AWD"
+      ]
+    },
+    "BRZ": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "BRZ",
+        "BRZ tS"
+      ]
+    },
+    "Crosstrek": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Crosstrek AWD",
+        "Crosstrek Hybrid AWD",
+        "Crosstrek Wilderness AWD"
+      ]
+    },
+    "Forester": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Forester AWD",
+        "Forester Hybrid AWD",
+        "Forester Sport/Touring AWD",
+        "Forester Wilderness AWD"
+      ]
+    },
+    "Impreza": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Impreza",
+        "Impreza 4-Door",
+        "Impreza 5-Door",
+        "Impreza AWD",
+        "Impreza Sport 4-Door",
+        "Impreza Sport 5-Door",
+        "Impreza Sport AWD",
+        "Impreza Wagon AWD"
+      ]
+    },
+    "Legacy": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "Legacy AWD"
+      ]
+    },
+    "Outback": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Outback AWD",
+        "Outback Wilderness AWD"
+      ]
+    },
+    "Solterra": {
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Solterra 20 AWD",
+        "Solterra AWD",
+        "Solterra Limited/Touring AWD"
+      ]
+    },
+    "Trailseeker": {
+      "years": [
+        2026
+      ],
+      "trims": [
+        "Trailseeker 20 inch AWD",
+        "Trailseeker AWD"
+      ]
+    },
+    "Uncharted": {
+      "years": [
+        2026
+      ],
+      "trims": [
+        "Uncharted",
+        "Uncharted 20 inch AWD",
+        "Uncharted AWD"
+      ]
+    },
+    "WRX": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "WRX",
+        "WRX STI Type RA"
+      ]
+    },
+    "XV CrossTrek": {
+      "years": [
+        2015
+      ],
+      "trims": [
+        "XV Crosstrek AWD",
+        "XV Crosstrek Hybrid AWD"
+      ]
+    }
+  },
+  "Tesla": {
+    "Cybertruck": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "Cybertruck AWD",
+        "Cybertruck Long Range",
+        "Cybertruck Long Range (20in Cyber wheels)"
+      ]
+    },
+    "Model 3": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Model 3 Long Range",
+        "Model 3 Long Range  AWD",
+        "Model 3 Long Range  AWD Performance",
+        "Model 3 Long Range AWD",
+        "Model 3 Long Range AWD Performance",
+        "Model 3 Long Range AWD-E",
+        "Model 3 Long Range Performance AWD (18in)",
+        "Model 3 Long Range Performance AWD (19in)",
+        "Model 3 Long Range Performance AWD (20in)",
+        "Model 3 Long Range RWD",
+        "Model 3 Long Range RWD-I (19in wheels)",
+        "Model 3 Mid Range",
+        "Model 3 Performance",
+        "Model 3 Performance AWD",
+        "Model 3 Premium AWD",
+        "Model 3 Premium RWD",
+        "Model 3 RWD",
+        "Model 3 Standard RWD",
+        "Model 3 Standard Range",
+        "Model 3 Standard Range Plus",
+        "Model 3 Standard Range Plus RWD"
+      ]
+    },
+    "Model S": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Model S",
+        "Model S (60 kW-hr battery pack)",
+        "Model S (70 kW-hr battery pack)",
+        "Model S (75 kW-hr battery pack)",
+        "Model S (85 kW-hr battery pack)",
+        "Model S (90 kW-hr battery pack)",
+        "Model S 100D",
+        "Model S 75D",
+        "Model S 75kWh",
+        "Model S AWD - 100D",
+        "Model S AWD - 60D",
+        "Model S AWD - 70D",
+        "Model S AWD - 75D",
+        "Model S AWD - 85D",
+        "Model S AWD - 90D",
+        "Model S AWD - P100D",
+        "Model S AWD - P85D",
+        "Model S AWD - P90D",
+        "Model S Long Range",
+        "Model S Long Range Plus",
+        "Model S P100D",
+        "Model S Performance (19in Wheels)",
+        "Model S Performance (21in Wheels)",
+        "Model S Plaid",
+        "Model S Plaid (19 inch wheels)",
+        "Model S Plaid (19in wheels)",
+        "Model S Plaid (21 inch wheels)",
+        "Model S Plaid (21in wheels)",
+        "Model S Plaid (21inch wheels)",
+        "Model S Standard Range"
+      ]
+    },
+    "Model X": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Model X",
+        "Model X 100D",
+        "Model X 75D",
+        "Model X AWD - 100D",
+        "Model X AWD - 60D",
+        "Model X AWD - 75D",
+        "Model X AWD - 90D",
+        "Model X AWD - P100D",
+        "Model X AWD - P90D",
+        "Model X Long Range",
+        "Model X Long Range Plus",
+        "Model X P100D",
+        "Model X Performance (20in Wheels)",
+        "Model X Performance (22in Wheels)",
+        "Model X Plaid",
+        "Model X Plaid (20 inch wheels)",
+        "Model X Plaid (20in wheels)",
+        "Model X Plaid (22 inch wheels)",
+        "Model X Plaid (22in wheels)",
+        "Model X Standard Range"
+      ]
+    },
+    "Model Y": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Model Y AWD",
+        "Model Y Long Range AWD",
+        "Model Y Long Range AWD-I",
+        "Model Y Long Range RWD",
+        "Model Y Performance AWD",
+        "Model Y Performance AWD (21in Wheels)",
+        "Model Y RWD",
+        "Model Y Standard AWD",
+        "Model Y Standard RWD (18in Wheels)",
+        "Model Y Standard RWD (19in Wheels)",
+        "Model Y Standard Range RWD"
+      ]
+    }
+  },
+  "Toyota": {
+    "4Runner": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "4Runner 2WD",
+        "4Runner 4WD",
+        "4Runner Hybrid 4WD"
+      ]
+    },
+    "86": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "86"
+      ]
+    },
+    "Avalon": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Avalon",
+        "Avalon AWD",
+        "Avalon Hybrid",
+        "Avalon Hybrid XLE",
+        "Avalon TRD",
+        "Avalon XLE"
+      ]
+    },
+    "C-HR": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2026
+      ],
+      "trims": [
+        "C-HR",
+        "C-HR AWD 18inch",
+        "C-HR AWD 20inch"
+      ]
+    },
+    "COROLLA iM": {
+      "years": [
+        2017,
+        2018
+      ],
+      "trims": [
+        "Corolla iM"
+      ]
+    },
+    "Camry": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Camry",
+        "Camry AWD LE/SE",
+        "Camry AWD XLE/XSE",
+        "Camry HEV AWD LE",
+        "Camry HEV AWD SE/XLE",
+        "Camry HEV AWD XSE",
+        "Camry HEV FF LE",
+        "Camry HEV FF SE/XLE/XSE",
+        "Camry Hybrid LE",
+        "Camry Hybrid SE/XLE/XSE",
+        "Camry Hybrid XLE/SE",
+        "Camry LE/SE",
+        "Camry TRD",
+        "Camry XLE/XSE",
+        "Camry XSE"
+      ]
+    },
+    "Corolla": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Corolla",
+        "Corolla (1-mode TM)",
+        "Corolla (3-mode TM)",
+        "Corolla APEX",
+        "Corolla FX",
+        "Corolla Hatchback",
+        "Corolla Hatchback FX",
+        "Corolla Hatchback XSE",
+        "Corolla Hybrid",
+        "Corolla Hybrid AWD",
+        "Corolla Hybrid SE",
+        "Corolla Hybrid SE AWD",
+        "Corolla LE Eco",
+        "Corolla XLE",
+        "Corolla XSE"
+      ]
+    },
+    "Corolla Cross": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Corolla Cross",
+        "Corolla Cross 4WD",
+        "Corolla Cross AWD",
+        "Corolla Cross Hybrid AWD"
+      ]
+    },
+    "Crown": {
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Crown AWD",
+        "Crown Hybrid AWD"
+      ]
+    },
+    "Crown Signia": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "Crown Signia AWD"
+      ]
+    },
+    "GR Corolla": {
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "GR Corolla"
+      ]
+    },
+    "Grand Highlander": {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Grand Highlander AWD LE/XLE",
+        "Grand Highlander AWD Limited/Platinum",
+        "Grand Highlander Hybrid",
+        "Grand Highlander Hybrid AWD",
+        "Grand Highlander Hybrid Limited",
+        "Grand Highlander LE/XLE",
+        "Grand Highlander Limited"
+      ]
+    },
+    "Highlander": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Highlander",
+        "Highlander 2WD",
+        "Highlander AWD",
+        "Highlander AWD LE",
+        "Highlander Hybrid",
+        "Highlander Hybrid AWD",
+        "Highlander Hybrid AWD LE Plus",
+        "Highlander Hybrid AWD LTD/PLAT",
+        "Highlander LE/XLE/SE/LTD"
+      ]
+    },
+    "Land Cruiser": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Land Cruiser",
+        "Land Cruiser Wagon 4WD"
+      ]
+    },
+    "Mirai": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Mirai",
+        "Mirai LE",
+        "Mirai Limited",
+        "Mirai XLE"
+      ]
+    },
+    "Prius": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Prius",
+        "Prius AWD",
+        "Prius AWD XLE/LTD",
+        "Prius Eco",
+        "Prius PHEV",
+        "Prius PHEV SE",
+        "Prius Plug-in Hybrid",
+        "Prius Prime",
+        "Prius Prime SE",
+        "Prius XLE/LTD"
+      ]
+    },
+    "Prius C": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Prius c"
+      ]
+    },
+    "Prius V": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Prius v"
+      ]
+    },
+    "RAV4": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "RAV4",
+        "RAV4 AWD",
+        "RAV4 AWD LE",
+        "RAV4 AWD Limited & XSE",
+        "RAV4 AWD SE & LE",
+        "RAV4 AWD TRD OFFROAD",
+        "RAV4 AWD XLE",
+        "RAV4 Hybrid  AWD",
+        "RAV4 Hybrid AWD",
+        "RAV4 Hybrid AWD Woodland Edition",
+        "RAV4 LE/XLE",
+        "RAV4 Limited AWD",
+        "RAV4 Limited AWD/SE AWD",
+        "RAV4 PHEV AWD",
+        "RAV4 Prime 4WD"
+      ]
+    },
+    "Sequoia": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Sequoia 2WD",
+        "Sequoia 4WD",
+        "Sequoia 4WD FFV"
+      ]
+    },
+    "Sienna": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Sienna 2WD",
+        "Sienna AWD",
+        "Sienna Hybrid 2WD",
+        "Sienna Hybrid AWD"
+      ]
+    },
+    "Tacoma": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Tacoma 2WD",
+        "Tacoma 4WD",
+        "Tacoma 4WD D-CAB MT TRD-ORP/PRO",
+        "Tacoma 4WD Double Cab",
+        "Tacoma 4WD Double Cab Off-Road",
+        "Tacoma 4WD MT",
+        "Tacoma 4WD TRD PRO",
+        "Tacoma Hybrid 4WD",
+        "Tacoma SR5/Sport/Off-Road/Limited 4WD",
+        "Tacoma SR5/Sport/PreRunner 2WD"
+      ]
+    },
+    "Tundra": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Tundra 2WD",
+        "Tundra 2WD FFV",
+        "Tundra 2WD TRD Perf",
+        "Tundra 4WD",
+        "Tundra 4WD FFV",
+        "Tundra 4WD PRO",
+        "Tundra 4WD TRD Perf",
+        "Tundra Hybrid 2WD",
+        "Tundra Hybrid 2WD TRD Perf",
+        "Tundra Hybrid 4WD",
+        "Tundra Hybrid 4WD PRO",
+        "Tundra Hybrid 4WD PRO TRD Perf",
+        "Tundra Hybrid 4WD TRD Per"
+      ]
+    },
+    "Venza": {
+      "years": [
+        2015,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "Venza",
+        "Venza 4WD",
+        "Venza AWD"
+      ]
+    },
+    "Yaris": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "trims": [
+        "Yaris"
+      ]
+    },
+    "Yaris iA": {
+      "years": [
+        2017,
+        2018
+      ],
+      "trims": [
+        "Yaris iA"
+      ]
+    },
+    "bZ": {
+      "years": [
+        2026
+      ],
+      "trims": [
+        "bZ (energy capacity 191 Ah)",
+        "bZ (energy capacity 200 Ah)",
+        "bZ AWD",
+        "bZ AWD LIMITED",
+        "bZ LIMITED (energy capacity 191 Ah)",
+        "bZ LIMITED (energy capacity 200 Ah)"
+      ]
+    },
+    "bZ Woodland": {
+      "years": [
+        2026
+      ],
+      "trims": [
+        "bZ Woodland AWD 235/60R18",
+        "bZ Woodland AWD 235/65R18"
+      ]
+    },
+    "bZ4X": {
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "bZ4X",
+        "bZ4X AWD",
+        "bZ4X AWD (18inch Wheels)",
+        "bZ4X AWD (20inch Wheels)",
+        "bZ4X LIMITED",
+        "bZ4X LIMITED AWD",
+        "bZ4X Limited",
+        "bZ4X Limited AWD"
+      ]
+    }
+  },
+  "Volkswagen": {
+    "Arteon": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "trims": [
+        "Arteon",
+        "Arteon 4motion"
+      ]
+    },
+    "Atlas": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Atlas",
+        "Atlas 4motion",
+        "Atlas 4motion Peak Edition",
+        "Atlas SE 4motion",
+        "Atlas SEL 4motion"
+      ]
+    },
+    "Atlas Cross Sport": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Atlas Cross Sport",
+        "Atlas Cross Sport 4motion"
+      ]
+    },
+    "Beetle": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "Beetle",
+        "Beetle Convertible",
+        "Beetle Dune",
+        "Beetle Dune Convertible"
+      ]
+    },
+    "CC": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "CC",
+        "CC 4motion"
+      ]
+    },
+    "Eos": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "Eos"
+      ]
+    },
+    "GTI": {
+      "years": [
+        2015,
+        2025
+      ],
+      "trims": [
+        "GTI"
+      ]
+    },
+    "Golf": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "Golf",
+        "Golf R"
+      ]
+    },
+    "Golf Alltrack": {
+      "years": [
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "Golf Alltrack"
+      ]
+    },
+    "Golf R": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Golf R"
+      ]
+    },
+    "Golf SportWagen": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "Golf SportWagen",
+        "Golf SportWagen 4motion"
+      ]
+    },
+    "ID. Buzz": {
+      "years": [
+        2025
+      ],
+      "trims": [
+        "ID. Buzz",
+        "ID. Buzz 4motion"
+      ]
+    },
+    "ID.4": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "ID.4",
+        "ID.4 1st",
+        "ID.4 AWD",
+        "ID.4 AWD Pro",
+        "ID.4 AWD Pro S",
+        "ID.4 Pro",
+        "ID.4 Pro S",
+        "ID.4 S"
+      ]
+    },
+    "Jetta": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Jetta",
+        "Jetta GLI",
+        "Jetta Hybrid",
+        "Jetta SE/SEL",
+        "Jetta Sport/SE/SEL"
+      ]
+    },
+    "Jetta GLI": {
+      "years": [
+        2021
+      ],
+      "trims": [
+        "Jetta GLI"
+      ]
+    },
+    "Passat": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "trims": [
+        "Passat"
+      ]
+    },
+    "Taos": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Taos",
+        "Taos 4motion"
+      ]
+    },
+    "Tiguan": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "Tiguan",
+        "Tiguan 4motion",
+        "Tiguan R-Line 4motion",
+        "Tiguan S",
+        "Tiguan SEL 4Motion"
+      ]
+    },
+    "Tiguan Limited": {
+      "years": [
+        2018
+      ],
+      "trims": [
+        "Tiguan Limited",
+        "Tiguan Limited 4motion"
+      ]
+    },
+    "Touareg": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "trims": [
+        "Touareg",
+        "Touareg Hybrid"
+      ]
+    },
+    "e-Golf": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "trims": [
+        "e-Golf"
+      ]
+    }
+  },
+  "Volvo": {
+    "C40": {
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "trims": [
+        "C40 Recharge",
+        "C40 Recharge twin"
+      ]
+    },
+    "EC40": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "EC40",
+        "EC40 Twin"
+      ]
+    },
+    "EX30": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "EX30 Cross Country (18 Inch Wheels)",
+        "EX30 Cross Country (19 Inch Wheels)",
+        "EX30 Single Motor extended range (18 Inch Wheels)",
+        "EX30 Single Motor extended range (19/20 Inch Wheels)",
+        "EX30 Single motor extended range",
+        "EX30 Twin Performance",
+        "EX30 Twin Performance (19 Inch Wheels)",
+        "EX30 Twin Performance (20 Inch Wheels)"
+      ]
+    },
+    "EX40": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "EX40",
+        "EX40 Twin"
+      ]
+    },
+    "EX90": {
+      "years": [
+        2025,
+        2026
+      ],
+      "trims": [
+        "EX90",
+        "EX90 (21 Inch Wheels)",
+        "EX90 Twin Motor",
+        "EX90 Twin Motor (20 and 22 Inch Wheels)",
+        "EX90 Twin Motor (21 Inch Wheels)",
+        "EX90 Twin Motor Performance",
+        "EX90 Twin Motor Performance (20 and 22 Inch Wheels)",
+        "EX90 Twin Motor Performance (21 Inch Wheels)"
+      ]
+    },
+    "S60": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "trims": [
+        "S60 AWD",
+        "S60 AWD PHEV",
+        "S60 B5",
+        "S60 B5 AWD",
+        "S60 CC AWD",
+        "S60 FWD",
+        "S60 Inscription AWD",
+        "S60 Inscription FWD",
+        "S60 PoleStar AWD",
+        "S60 Polestar AWD",
+        "S60 T8 AWD",
+        "S60 T8 AWD Recharge",
+        "S60 T8 AWD Recharge ext. Range"
+      ]
+    },
+    "S80": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "S80 AWD",
+        "S80 FWD"
+      ]
+    },
+    "S90": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "S90 AWD",
+        "S90 AWD PHEV",
+        "S90 B5",
+        "S90 B6 AWD",
+        "S90 FWD",
+        "S90 T8 AWD",
+        "S90 T8 AWD Recharge",
+        "S90 T8 AWD Recharge ext. Range"
+      ]
+    },
+    "V60": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "trims": [
+        "V60 AWD",
+        "V60 AWD PHEV",
+        "V60 CC AWD",
+        "V60 CC FWD",
+        "V60 FWD",
+        "V60 PoleStar AWD",
+        "V60 Polestar AWD",
+        "V60 T8 AWD",
+        "V60 T8 AWD Recharge",
+        "V60 T8 AWD Recharge ext. Range"
+      ]
+    },
+    "V60CC": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "V60CC B5 AWD",
+        "V60CC T5 AWD"
+      ]
+    },
+    "V90": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "trims": [
+        "V90 AWD",
+        "V90 CC AWD",
+        "V90 FWD"
+      ]
+    },
+    "V90CC": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "V90CC B6 AWD"
+      ]
+    },
+    "XC40": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "XC40 AWD",
+        "XC40 AWD BEV",
+        "XC40 B4",
+        "XC40 B5 AWD",
+        "XC40 FWD",
+        "XC40 Recharge",
+        "XC40 Recharge twin",
+        "XC40 T4",
+        "XC40 T5 AWD"
+      ]
+    },
+    "XC60": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "XC60 AWD",
+        "XC60 AWD PHEV",
+        "XC60 B5",
+        "XC60 B5 AWD",
+        "XC60 B6 AWD",
+        "XC60 FWD",
+        "XC60 T8 AWD",
+        "XC60 T8 AWD Recharge",
+        "XC60 T8 AWD Recharge ext. Range"
+      ]
+    },
+    "XC70": {
+      "years": [
+        2015,
+        2016
+      ],
+      "trims": [
+        "XC70 AWD",
+        "XC70 FWD"
+      ]
+    },
+    "XC90": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "trims": [
+        "XC90 AWD",
+        "XC90 AWD PHEV",
+        "XC90 B5 AWD",
+        "XC90 B6 AWD",
+        "XC90 FWD",
+        "XC90 T5",
+        "XC90 T5 AWD",
+        "XC90 T6 AWD",
+        "XC90 T8 AWD",
+        "XC90 T8 AWD Recharge",
+        "XC90 T8 AWD Recharge ext. Range"
+      ]
+    }
+  }
+}

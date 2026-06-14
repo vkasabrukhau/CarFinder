@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { AutocompleteField } from "@/components/ui/autocomplete-field";
+import { VehicleAutocomplete } from "@/components/ui/vehicle-autocomplete";
 
 // ── Static autocomplete options ───────────────────────────────────────────────
 
@@ -26,6 +27,8 @@ const DRIVE_TYPES = ["FWD", "RWD", "AWD", "4WD", "4x4"];
 
 let _makesCache: string[] | null = null;
 const _modelsCache = new Map<string, string[]>();
+const _yearsCache = new Map<string, string[]>();
+const _trimsCache = new Map<string, string[]>();
 
 async function fetchMakes(): Promise<string[]> {
   if (_makesCache) return _makesCache;
@@ -42,26 +45,29 @@ async function fetchModels(make: string): Promise<string[]> {
   return models;
 }
 
-// ── Bar data ──────────────────────────────────────────────────────────────────
+async function fetchYears(make: string, model: string): Promise<string[]> {
+  const key = `${make} ${model}`;
+  if (_yearsCache.has(key)) return _yearsCache.get(key)!;
+  const data: unknown = await fetch(
+    `/api/vehicles?make=${encodeURIComponent(make)}&model=${encodeURIComponent(model)}&type=years`,
+  ).then((r) => r.json());
+  const years = Array.isArray(data) ? (data as number[]).map(String) : [];
+  _yearsCache.set(key, years);
+  return years;
+}
 
-const yearBars = [
-  { label: "2010", value: 2010, count: 14 },
-  { label: "2011", value: 2011, count: 18 },
-  { label: "2012", value: 2012, count: 23 },
-  { label: "2013", value: 2013, count: 31 },
-  { label: "2014", value: 2014, count: 39 },
-  { label: "2015", value: 2015, count: 54 },
-  { label: "2016", value: 2016, count: 62 },
-  { label: "2017", value: 2017, count: 76 },
-  { label: "2018", value: 2018, count: 89 },
-  { label: "2019", value: 2019, count: 97 },
-  { label: "2020", value: 2020, count: 81 },
-  { label: "2021", value: 2021, count: 67 },
-  { label: "2022", value: 2022, count: 73 },
-  { label: "2023", value: 2023, count: 84 },
-  { label: "2024", value: 2024, count: 71 },
-  { label: "2025", value: 2025, count: 42 },
-];
+async function fetchTrims(make: string, model: string): Promise<string[]> {
+  const key = `${make} ${model}`;
+  if (_trimsCache.has(key)) return _trimsCache.get(key)!;
+  const data: unknown = await fetch(
+    `/api/vehicles?make=${encodeURIComponent(make)}&model=${encodeURIComponent(model)}&type=trims`,
+  ).then((r) => r.json());
+  const trims = Array.isArray(data) ? (data as string[]) : [];
+  _trimsCache.set(key, trims);
+  return trims;
+}
+
+// ── Bar data ──────────────────────────────────────────────────────────────────
 
 const milesBars = [
   { label: "0k", value: 0, count: 29 },
@@ -90,7 +96,24 @@ const priceBars = [
   { label: "$50k+", value: 50000, count: 14 },
 ];
 
+// Full year span covered by cars.db (see api/Model Database Aggregation),
+// shown before a Make/Model narrows the range.
+const DEFAULT_YEARS = Array.from({ length: 2026 - 2015 + 1 }, (_, i) => String(2015 + i));
+
 // ── Helpers ───────────────────────────────────────────────────────────────────
+
+// Year bars have no real listing-count data (cars.db only knows which years a
+// model was sold), so give them the same bell-curve shape as the Miles/Price
+// histograms for visual consistency.
+function bellCurveCounts(n: number): number[] {
+  if (n === 0) return [];
+  if (n === 1) return [50];
+  const mid = (n - 1) / 2;
+  return Array.from({ length: n }, (_, i) => {
+    const t = (i - mid) / mid;
+    return Math.round(95 - 75 * t * t);
+  });
+}
 
 function closestIndex(value: number, values: number[]): number {
   let best = 0;
@@ -222,7 +245,7 @@ const field =
 export default function AddPage() {
   const [make, setMake] = useState("");
   const [model, setModel] = useState("");
-  const [trims, setTrims] = useState("");
+  const [trim, setTrim] = useState("");
   const [engines, setEngines] = useState("");
   const [fuelType, setFuelType] = useState("");
   const [bodyType, setBodyType] = useState("");
@@ -232,20 +255,9 @@ export default function AddPage() {
 
   const [makes, setMakes] = useState<string[]>([]);
   const [models, setModels] = useState<string[]>([]);
+  const [trims, setTrims] = useState<string[]>([]);
+  const [years, setYears] = useState<string[]>([]);
 
-  useEffect(() => {
-    fetchMakes().then(setMakes).catch(() => {});
-  }, []);
-
-  useEffect(() => {
-    if (!make) return;
-    fetchModels(make).then(setModels).catch(() => {});
-  }, [make]);
-
-  const [yearRange, setYearRange] = useState<[number, number]>([
-    0,
-    yearBars.length - 1,
-  ]);
   const [milesRange, setMilesRange] = useState<[number, number]>([
     0,
     milesBars.length - 1,
@@ -254,29 +266,80 @@ export default function AddPage() {
     0,
     priceBars.length - 1,
   ]);
+  const [yearRange, setYearRange] = useState<[number, number]>([
+    0,
+    DEFAULT_YEARS.length - 1,
+  ]);
 
-  const yearValues = yearBars.map((b) => b.value);
+  useEffect(() => {
+    fetchMakes().then(setMakes).catch(() => {});
+  }, []);
+
+  // Loads the Model list once a Make is selected.
+  useEffect(() => {
+    if (!make) return;
+    fetchModels(make).then(setModels).catch(() => {});
+  }, [make]);
+
+  // Loads the Year range + Trim options once a Model is selected.
+  useEffect(() => {
+    if (!make || !model) return;
+    fetchYears(make, model)
+      .then((ys) => {
+        setYears(ys);
+        setYearRange([0, Math.max(0, ys.length - 1)]);
+      })
+      .catch(() => {});
+    fetchTrims(make, model).then(setTrims).catch(() => {});
+  }, [make, model]);
+
+  // Cascading resets: changing Make clears Model/Trim/Year, changing Model
+  // clears Trim/Year — the data-loading effects above then repopulate them.
+  function handleMakeChange(value: string) {
+    setMake(value);
+    setModel("");
+    setTrim("");
+    setModels([]);
+    setYears([]);
+    setTrims([]);
+    setYearRange([0, DEFAULT_YEARS.length - 1]);
+  }
+
+  function handleModelChange(value: string) {
+    setModel(value);
+    setTrim("");
+    setYears([]);
+    setTrims([]);
+    setYearRange([0, DEFAULT_YEARS.length - 1]);
+  }
+
   const milesValues = milesBars.map((b) => b.value);
   const priceValues = priceBars.map((b) => b.value);
 
-  const minYear = yearBars[yearRange[0]].value;
-  const maxYear = yearBars[yearRange[1]].value;
   const minMiles = milesBars[milesRange[0]].value;
   const maxMiles = milesBars[milesRange[1]].value;
   const minPrice = priceBars[priceRange[0]].value;
   const maxPrice = priceBars[priceRange[1]].value;
 
+  const displayYears = years.length > 0 ? years : DEFAULT_YEARS;
+  const yearCounts = bellCurveCounts(displayYears.length);
+  const yearBars = displayYears.map((y, i) => ({ label: y, value: Number(y), count: yearCounts[i] }));
+  const yearValues = yearBars.map((b) => b.value);
+  const minYear = yearBars[yearRange[0]]?.value ?? "";
+  const maxYear = yearBars[yearRange[1]]?.value ?? "";
+  const yearDisabled = years.length === 0;
+
   return (
     <main className="flex flex-col gap-6 p-6 h-[calc(100dvh-3.5rem)]">
       <div className="grid flex-1 min-h-0 grid-cols-3 gap-6">
-        {/* ── Column 1: Make · Year · Engines ── */}
+        {/* ── Column 1: Make · Year · Engines · Fuel Type ── */}
         <div className="flex flex-col gap-20">
-          <AutocompleteField
+          <VehicleAutocomplete
             items={makes}
             value={make}
-            onValueChange={setMake}
+            onValueChange={handleMakeChange}
             placeholder="Make"
-            className={field}
+            inputClassName={field}
           />
 
           <div className="flex gap-6">
@@ -285,9 +348,13 @@ export default function AddPage() {
               type="number"
               placeholder="Min Year"
               value={minYear}
+              disabled={yearDisabled}
               onChange={(e) => {
                 const v = Number(e.target.value);
-                const idx = Math.min(closestIndex(v, yearValues), yearRange[1]);
+                const idx = Math.min(
+                  closestIndex(v, yearValues),
+                  yearRange[1],
+                );
                 setYearRange([idx, yearRange[1]]);
               }}
             />
@@ -296,9 +363,13 @@ export default function AddPage() {
               type="number"
               placeholder="Max Year"
               value={maxYear}
+              disabled={yearDisabled}
               onChange={(e) => {
                 const v = Number(e.target.value);
-                const idx = Math.max(closestIndex(v, yearValues), yearRange[0]);
+                const idx = Math.max(
+                  closestIndex(v, yearValues),
+                  yearRange[0],
+                );
                 setYearRange([yearRange[0], idx]);
               }}
             />
@@ -327,14 +398,14 @@ export default function AddPage() {
           />
         </div>
 
-        {/* ── Column 2: Model · Miles · Body Type ── */}
+        {/* ── Column 2: Model · Miles · Body Type · Transmission ── */}
         <div className="flex flex-col gap-20">
-          <AutocompleteField
-            items={make ? models : []}
+          <VehicleAutocomplete
+            items={models}
             value={model}
-            onValueChange={setModel}
+            onValueChange={handleModelChange}
             placeholder="Model"
-            className={field}
+            inputClassName={field}
             disabled={!make}
           />
 
@@ -392,13 +463,15 @@ export default function AddPage() {
           />
         </div>
 
-        {/* ── Column 3: Trims · Price · Keywords ── */}
+        {/* ── Column 3: Trim · Price · Keywords · Drive Type ── */}
         <div className="flex flex-col gap-20">
-          <input
-            className={field}
-            placeholder="Trims"
-            value={trims}
-            onChange={(e) => setTrims(e.target.value)}
+          <VehicleAutocomplete
+            items={trims}
+            value={trim}
+            onValueChange={setTrim}
+            placeholder="Trim"
+            inputClassName={field}
+            disabled={!make || !model}
           />
 
           <div className="flex gap-6">
