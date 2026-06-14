@@ -2,6 +2,10 @@
 --  Car App — free MVP schema (SQLite)
 --  Hierarchy:  Brand -> Model -> Generation -> ModelYear -> Trim -> {Engine, Transmission}
 --  Designed to port cleanly to Postgres later (Supabase free tier).
+--
+--  Sources: NHTSA vPIC (brands/models/years) + fueleconomy.gov (trims,
+--  engines, transmissions, fuel economy). CarQuery (the original trim
+--  source) is defunct.
 -- ============================================================
 
 PRAGMA foreign_keys = ON;
@@ -59,16 +63,16 @@ CREATE TABLE IF NOT EXISTS model_years (
 CREATE TABLE IF NOT EXISTS trims (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     model_year_id   INTEGER NOT NULL REFERENCES model_years(id) ON DELETE CASCADE,
-    name            TEXT NOT NULL,           -- trim only: "S", "GTS", "Type R", "(base)"
-    full_name       TEXT,                    -- model + trim: "Macan S"  <- the differentiator
-    carquery_id     TEXT,                    -- CarQuery model_id (their trim key)
+    name            TEXT NOT NULL,           -- engine/trans differentiator, e.g. "1.5L, 4-cyl, Turbo, CVT"
+    full_name       TEXT,                    -- fueleconomy "model" string: "Civic 4Dr", "CR-V Hybrid AWD"
+    external_id     TEXT,                    -- fueleconomy.gov vehicle id (their trim key)
     msrp            REAL,
     body            TEXT,
     doors           INTEGER,
     seats           INTEGER,
     specs_json      TEXT,                    -- long-tail attrs as raw JSON
     source          TEXT,
-    UNIQUE (model_year_id, name, carquery_id)
+    UNIQUE (model_year_id, name, external_id)
 );
 
 -- ---------- Engines (quintessential -> real columns) ----------

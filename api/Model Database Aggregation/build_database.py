@@ -5,10 +5,10 @@ Car App — local database assembler.
 Builds a complete local SQLite database of:
     brands -> models -> model_years -> trims -> {engines, transmissions}
 
-from two free sources (vPIC for the hierarchy, CarQuery for trims + specs),
-with a **disk cache** so the first run fetches and every later run rebuilds the
-database fully OFFLINE with no rate limits. Reuses the parsing/DB helpers in
-ingest.py.
+from two free sources (vPIC for the hierarchy, fueleconomy.gov for trims +
+engine/transmission/fuel-economy specs), with a **disk cache** so the first
+run fetches and every later run rebuilds the database fully OFFLINE with no
+rate limits. Reuses the parsing/DB helpers in ingest.py.
 
 Two ways to source the brand/model hierarchy:
   * default ("api")  -> crawl vPIC GetModelsForMakeYear (car+mpv+truck)
@@ -16,12 +16,13 @@ Two ways to source the brand/model hierarchy:
                         (convert the NHTSA .bak with a community tool first;
                          see README). Removes vPIC API calls entirely.
 
-Trims + engine + transmission always come from CarQuery (cached).
+Trims + engine + transmission + fuel economy always come from fueleconomy.gov
+(cached).
 
 Examples
 --------
-# Build recent Porsche + Honda, 2020-2024, into a local DB
-python3 build_database.py --db ~/cars.db --make porsche --make honda \
+# Build recent Honda + Toyota, 2020-2024, into a local DB
+python3 build_database.py --db ~/cars.db --make honda --make toyota \\
         --from 2020 --to 2024
 
 # Build EVERY US make for 2024 (large; cache makes re-runs free/offline)
@@ -31,7 +32,7 @@ python3 build_database.py --db ~/cars.db --all-makes --from 2024 --to 2024
 python3 build_database.py --db ~/cars.db --all-makes --from 2024 --to 2024 --offline
 
 # Use a restored official vPIC dump for the hierarchy:
-python3 build_database.py --db ~/cars.db --all-makes --from 2024 --to 2024 \
+python3 build_database.py --db ~/cars.db --all-makes --from 2024 --to 2024 \\
         --vpic-db ~/vpic_lite.sqlite
 
 Stdlib only. No pip installs.
@@ -114,7 +115,7 @@ def models_from_dump(conn, make):
 
     Official vPIC schema: Make(Id,Name), Model(Id,Name), Make_Model(MakeId,ModelId).
     The dump has no clean model-year table, so years are confirmed downstream by
-    whether CarQuery returns trims for that year.
+    whether fueleconomy.gov has trims for that year.
     """
     cur = conn.execute(
         "SELECT mo.Id, mo.Name FROM Make ma "
@@ -126,15 +127,28 @@ def models_from_dump(conn, make):
     return cur.fetchall()
 
 
-def trims_for(cache, make, model, year):
-    return cache.get_or(f"trims:{make}:{model}:{year}",
-                        lambda: ingest.carquery_trims(make, model, year))
+def fe_models_cached(cache, make, year):
+    """fueleconomy.gov model strings for a make/year, cached."""
+    return cache.get_or(f"fe_models:{make}:{year}",
+                        lambda: ingest.fe_models(make, year))
+
+
+def fe_options_cached(cache, make, fe_model, year):
+    """(vehicle_id, description) pairs for a fueleconomy make/model/year, cached."""
+    return cache.get_or(f"fe_options:{make}:{fe_model}:{year}",
+                        lambda: ingest.fe_options(make, fe_model, year))
+
+
+def fe_vehicle_cached(cache, vehicle_id):
+    """Full fueleconomy.gov vehicle record, cached."""
+    return cache.get_or(f"fe_vehicle:{vehicle_id}",
+                        lambda: ingest.fe_vehicle(vehicle_id))
 
 
 # --------------------------------------------------------------------------- #
 #  Build
 # --------------------------------------------------------------------------- #
-def build(cx, cache, makes, years, vpic_conn=None, rate=0.3):
+def build(cx, cache, makes, years, vpic_conn=None, rate=0.1):
     totals = {"models": 0, "trims": 0, "engines": 0}
     for make in makes:
         brand_id = ingest.upsert_brand(cx, make, ingest.vpic_make_id(make)
@@ -150,26 +164,39 @@ def build(cx, cache, makes, years, vpic_conn=None, rate=0.3):
             if models:
                 log.info("%s %s: %d models", make.title(), year, len(models))
 
+            model_id_by_name = {}
             for vpic_id, model_name in models:
-                model_id = ingest.upsert_model(cx, brand_id, model_name, vpic_id)
-                trims = trims_for(cache, make, model_name, year)
-                if not trims:
+                model_id_by_name[model_name] = ingest.upsert_model(cx, brand_id, model_name, vpic_id)
+
+            fe_list = fe_models_cached(cache, make, year)
+            matches = ingest.match_fe_models(model_id_by_name.keys(), fe_list)
+
+            for fe_name, vpic_name in matches.items():
+                if vpic_name is None:
+                    continue
+                options = fe_options_cached(cache, make, fe_name, year)
+                if not options:
                     continue
                 # only materialise the model-year when we have real trims for it
-                my_id = ingest.upsert_model_year(cx, model_id, year)
+                my_id = ingest.upsert_model_year(cx, model_id_by_name[vpic_name], year)
                 totals["models"] += 1
-                for t in trims:
-                    tid = ingest.insert_trim(cx, my_id, t)
+                n = 0
+                for vehicle_id, _text in options:
+                    v = fe_vehicle_cached(cache, vehicle_id)
+                    if not v:
+                        continue
+                    tid = ingest.insert_trim(cx, my_id, v)
                     if tid is None:
                         continue
-                    ingest.insert_engine(cx, tid, t)
-                    ingest.insert_transmission(cx, tid, t)
+                    ingest.insert_engine(cx, tid, v)
+                    ingest.insert_transmission(cx, tid, v)
                     totals["trims"] += 1
                     totals["engines"] += 1
-                log.info("    %s %s: %d trims", model_name, year, len(trims))
+                    n += 1
+                    if not cache.offline:
+                        time.sleep(rate)  # polite to fueleconomy.gov on first pass only
+                log.info("    %s %s: %d trims", fe_name, year, n)
                 cx.commit()
-                if not cache.offline:
-                    time.sleep(rate)  # polite to CarQuery on first pass only
     return totals
 
 
@@ -188,7 +215,7 @@ def main():
     ap.add_argument("--vpic-db", help="path to restored vPIC dump (SQLite) for hierarchy")
     ap.add_argument("--offline", action="store_true",
                     help="build only from cache; make no network calls")
-    ap.add_argument("--rate", type=float, default=0.3, help="seconds between CarQuery calls")
+    ap.add_argument("--rate", type=float, default=0.1, help="seconds between fueleconomy.gov calls")
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args()
 
