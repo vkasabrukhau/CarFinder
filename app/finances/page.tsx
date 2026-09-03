@@ -221,26 +221,20 @@ export default function FinancesPage() {
   const chartData = useMemo(() => {
     const monthlyRate = annualReturn / 100 / 12;
 
-    return Array.from({ length: 25 }, (_, i) => i).reduce<{
-      cash: number;
-      portfolio: number;
-      points: { month: string; "Savings": number; "Total w/ Investments": number }[];
-    }>(
-      ({ cash, portfolio, points }, i) => {
-        const d = new Date(2026, 5 + i, 1);
-        const point = {
-          month: d.toLocaleString("default", { month: "short", year: "2-digit" }),
-          "Savings":              Math.round(cash),
-          "Total w/ Investments": Math.round(cash + portfolio),
-        };
-        return {
-          cash:      cash + monthlyCash,
-          portfolio: portfolio * (1 + monthlyRate) + monthlyContrib,
-          points:    [...points, point],
-        };
-      },
-      { cash: 0, portfolio: 0, points: [] },
-    ).points;
+    const points: { month: string; "Savings": number; "Total w/ Investments": number }[] = [];
+    let cash = 0;
+    let portfolio = 0;
+    for (let i = 0; i < 25; i++) {
+      const d = new Date(2026, 5 + i, 1);
+      points.push({
+        month: d.toLocaleString("default", { month: "short", year: "2-digit" }),
+        "Savings":              Math.round(cash),
+        "Total w/ Investments": Math.round(cash + portfolio),
+      });
+      cash      += monthlyCash;
+      portfolio  = portfolio * (1 + monthlyRate) + monthlyContrib;
+    }
+    return points;
   }, [monthlyCash, monthlyContrib, annualReturn]);
 
   // Projected 24-month portfolio value (last point)
