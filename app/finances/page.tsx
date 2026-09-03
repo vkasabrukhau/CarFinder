@@ -219,21 +219,28 @@ export default function FinancesPage() {
   // Rendered with Total behind and Savings in front. The blue area visible above
   // the green/red line is the investment portfolio — it widens as compounding kicks in.
   const chartData = useMemo(() => {
-    let cash = 0;
-    let portfolio = 0;
     const monthlyRate = annualReturn / 100 / 12;
 
-    return Array.from({ length: 25 }, (_, i) => {
-      const d = new Date(2026, 5 + i, 1);
-      const point = {
-        month: d.toLocaleString("default", { month: "short", year: "2-digit" }),
-        "Savings":              Math.round(cash),
-        "Total w/ Investments": Math.round(cash + portfolio),
-      };
-      cash      += monthlyCash;
-      portfolio  = portfolio * (1 + monthlyRate) + monthlyContrib;
-      return point;
-    });
+    return Array.from({ length: 25 }, (_, i) => i).reduce<{
+      cash: number;
+      portfolio: number;
+      points: { month: string; "Savings": number; "Total w/ Investments": number }[];
+    }>(
+      ({ cash, portfolio, points }, i) => {
+        const d = new Date(2026, 5 + i, 1);
+        const point = {
+          month: d.toLocaleString("default", { month: "short", year: "2-digit" }),
+          "Savings":              Math.round(cash),
+          "Total w/ Investments": Math.round(cash + portfolio),
+        };
+        return {
+          cash:      cash + monthlyCash,
+          portfolio: portfolio * (1 + monthlyRate) + monthlyContrib,
+          points:    [...points, point],
+        };
+      },
+      { cash: 0, portfolio: 0, points: [] },
+    ).points;
   }, [monthlyCash, monthlyContrib, annualReturn]);
 
   // Projected 24-month portfolio value (last point)
